@@ -1,0 +1,2589 @@
+$(window).load(function() {
+ $( document ).ready(function() {
+
+ 	var div_alto = $(".v_ampliada .sus").height();
+
+	$(".map").css({'height': div_alto});
+
+
+ 	var angle = 0;
+	setInterval(function(){
+	
+		angle+=3;
+		$("#circle").rotate(angle);
+
+	},50);
+
+	setInterval(function(){
+	
+		$(".palpito").animate({
+			    fontSize: '22px'
+		}, 700);
+
+		$(".palpito").delay(100).animate({
+			    fontSize: '17px'
+		}, 700);
+
+	},50);
+
+
+	$(".i-sucu1").click(function() {
+
+
+		$( '.sucu1' ).delay(1000).show(1000);
+		$( '.sucu2' ).hide(1000);
+		$( '.sucu3' ).hide(1000);
+		$( '.sucu4' ).hide(1000);
+		$( '.sucu5' ).hide(1000);
+
+		$(".i-sucu1").css({'border':'3px solid #fff'});
+		$(".i-sucu2").css({'border':'1px solid #fff'});
+		$(".i-sucu3").css({'border':'1px solid #fff'});
+		$(".i-sucu4").css({'border':'1px solid #fff'});
+		$(".i-sucu5").css({'border':'1px solid #fff'});
+
+		$('html,body').animate({scrollTop: $(".mas-inf").offset().top},'slow');
+
+			  
+	});
+
+	$(".i-sucu2").click(function() {
+
+
+		$( '.sucu2' ).delay(1000).show(1000);
+		$( '.sucu1' ).hide(1000);
+		$( '.sucu3' ).hide(1000);
+		$( '.sucu4' ).hide(1000);
+		$( '.sucu5' ).hide(1000);
+
+
+		$(".i-sucu2").css({'border':'3px solid #fff'});
+		$(".i-sucu1").css({'border':'1px solid #fff'});
+		$(".i-sucu3").css({'border':'1px solid #fff'});
+		$(".i-sucu4").css({'border':'1px solid #fff'});
+		$(".i-sucu5").css({'border':'1px solid #fff'});
+
+		$('html,body').animate({scrollTop: $(".mas-inf").offset().top},'slow');
+
+			  
+	});
+
+	$(".i-sucu3").click(function() {
+
+
+		$( '.sucu3' ).delay(1000).show(1000);
+		$( '.sucu2' ).hide(1000);
+		$( '.sucu1' ).hide(1000);
+		$( '.sucu4' ).hide(1000);
+		$( '.sucu5' ).hide(1000);
+
+
+		$(".i-sucu3").css({'border':'3px solid #fff'});
+		$(".i-sucu2").css({'border':'1px solid #fff'});
+		$(".i-sucu1").css({'border':'1px solid #fff'});
+		$(".i-sucu4").css({'border':'1px solid #fff'});
+		$(".i-sucu5").css({'border':'1px solid #fff'});
+
+		$('html,body').animate({scrollTop: $(".mas-inf").offset().top},'slow');
+
+			  
+	});
+
+	$(".i-sucu4").click(function() {
+
+
+		$( '.sucu4' ).delay(1000).show(1000);
+		$( '.sucu2' ).hide(1000);
+		$( '.sucu3' ).hide(1000);
+		$( '.sucu1' ).hide(1000);
+		$( '.sucu5' ).hide(1000);
+
+
+		$(".i-sucu4").css({'border':'3px solid #fff'});
+		$(".i-sucu2").css({'border':'1px solid #fff'});
+		$(".i-sucu3").css({'border':'1px solid #fff'});
+		$(".i-sucu1").css({'border':'1px solid #fff'});
+		$(".i-sucu5").css({'border':'1px solid #fff'});
+
+		$('html,body').animate({scrollTop: $(".mas-inf").offset().top},'slow');
+
+			  
+	});
+
+	$(".i-sucu5").click(function() {
+
+
+		$( '.sucu5' ).delay(1000).show(1000);
+		$( '.sucu2' ).hide(1000);
+		$( '.sucu3' ).hide(1000);
+		$( '.sucu1' ).hide(1000);
+		$( '.sucu4' ).hide(1000);
+
+
+		$(".i-sucu5").css({'border':'3px solid #fff'});
+		$(".i-sucu2").css({'border':'1px solid #fff'});
+		$(".i-sucu3").css({'border':'1px solid #fff'});
+		$(".i-sucu1").css({'border':'1px solid #fff'});
+		$(".i-sucu4").css({'border':'1px solid #fff'});
+
+		$('html,body').animate({scrollTop: $(".mas-inf").offset().top},'slow');
+
+			  
+	});
+
+
+ 	llantas();
+
+     function llantas(){
+
+     	if ($(window).width() < 770) {
+
+     		$("#l1").delay(1000).animate({
+			    'margin-left': '2px'
+			}, 700);
+
+			$("#l1").delay(2000).animate({
+			    'opacity': '0'
+			}, 700);
+
+	     	$("#l2").delay(4000).animate({
+			    'margin-left': '2px'
+			}, 700);
+
+			$("#l2").delay(3000).animate({
+			    'opacity': '0'
+			}, 700);
+
+			$("#l3").delay(8000).animate({
+			    'margin-left': '2px'
+			}, 700);
+
+			$("#l3").delay(3000).animate({
+			    'opacity': '0'
+			}, 700);
+
+			$("#l4").delay(12000).animate({
+			    'margin-left': '2px'
+			}, 700);
+
+			$("#l4").delay(3000).animate({
+			    'opacity': '0'
+			}, 700);
+
+			$("#l5").delay(16000).animate({
+			    'margin-left': '2px'
+			}, 700);
+
+			$("#l5").delay(3000).animate({
+			    'opacity': '0'
+			}, 700, function() {
+		  		regreso();
+		  	});
+
+
+     		
+     	}else if ($(window).width() < 1030){
+
+
+     		$("#l1").delay(1000).animate({
+			    'margin-left': '120px'
+			}, 700);
+
+			$("#l1").delay(2000).animate({
+			    'opacity': '0'
+			}, 700);
+
+	     	$("#l2").delay(4000).animate({
+			    'margin-left': '120px'
+			}, 700);
+
+			$("#l2").delay(3000).animate({
+			    'opacity': '0'
+			}, 700);
+
+			$("#l3").delay(8000).animate({
+			    'margin-left': '120px'
+			}, 700);
+
+			$("#l3").delay(3000).animate({
+			    'opacity': '0'
+			}, 700);
+
+			$("#l4").delay(12000).animate({
+			    'margin-left': '120px'
+			}, 700);
+
+			$("#l4").delay(3000).animate({
+			    'opacity': '0'
+			}, 700);
+
+			$("#l5").delay(16000).animate({
+			    'margin-left': '120px'
+			}, 700);
+
+			$("#l5").delay(3000).animate({
+			    'opacity': '0'
+			}, 700, function() {
+		  		regreso();
+		  	});
+
+
+
+     	}else{
+	     	$("#l1").delay(1000).animate({
+			    'margin-left': '300px'
+			}, 700);
+
+			$("#l1").delay(2000).animate({
+			    'opacity': '0'
+			}, 700);
+
+	     	$("#l2").delay(4000).animate({
+			    'margin-left': '300px'
+			}, 700);
+
+			$("#l2").delay(3000).animate({
+			    'opacity': '0'
+			}, 700);
+
+			$("#l3").delay(8000).animate({
+			    'margin-left': '300px'
+			}, 700);
+
+			$("#l3").delay(3000).animate({
+			    'opacity': '0'
+			}, 700);
+
+			$("#l4").delay(12000).animate({
+			    'margin-left': '300px'
+			}, 700);
+
+			$("#l4").delay(3000).animate({
+			    'opacity': '0'
+			}, 700);
+
+			$("#l5").delay(16000).animate({
+			    'margin-left': '300px'
+			}, 700);
+
+			$("#l5").delay(3000).animate({
+			    'opacity': '0'
+			}, 700, function() {
+		  		regreso();
+		});
+
+     }
+
+ 	}
+
+     function regreso(){
+
+     	$("#l1").animate({
+			'margin-left': '-3000px'
+		}, 700);
+
+		$("#l1").delay(100).animate({
+			'opacity': '1'    
+		}, 700);
+
+	    $("#l2").animate({
+			'margin-left': '-3000px'
+		}, 700);
+
+		$("#l2").delay(100).animate({
+			'opacity': '1'    
+		}, 700);
+
+		$("#l3").animate({
+			'margin-left': '-3000px'
+		}, 700);
+
+		$("#l3").delay(100).animate({
+			'opacity': '1'    
+		}, 700);
+
+		$("#l4").animate({
+			'margin-left': '-3000px'
+		}, 700);
+
+		$("#l4").delay(100).animate({
+			'opacity': '1'    
+		}, 700);
+
+		$("#l5").animate({
+			'margin-left': '-3000px'
+		}, 700);
+
+		$("#l5").delay(100).animate({
+			'opacity': '1'
+		}, 700, function() {
+		  		llantas();
+     			});
+    }
+
+    $('.logos_marcas').each( function(i){
+                
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                
+                /* If the object is completely visible in the window, fade it it */
+                if( bottom_of_window > bottom_of_object ){
+                    
+                    $(this).animate({'opacity': '1', 'top': '-30'},2000);
+                        
+                }
+                
+        }); 
+
+    $('.ta_4').each( function(i){
+                
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                
+                /* If the object is completely visible in the window, fade it it */
+                if( bottom_of_window > bottom_of_object ){
+                    
+                    $(this).animate({'opacity': '1', 'left': '0'},1000);
+                        
+                }
+                
+    }); 
+
+     $('.logo_dis').each( function(i){
+                
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                
+                /* If the object is completely visible in the window, fade it it */
+                if( bottom_of_window > bottom_of_object ){
+                    
+                    $(this).animate({'opacity': '1', 'top': '0'},1000);
+                        
+                }
+                
+        }); 
+
+    $('#ani_nos').delay(1000).animate({'opacity': '1', 'left': '0'},2000);
+
+	$('#ani_ser .titulo').delay(1000).animate({'opacity': '1', 'left': '0'},2000);
+
+	$('#ani_ser .tag').delay(2000).animate({'opacity': '1', 'top': '0'},2000);
+
+	$('.texto_2').delay(2000).animate({'opacity': '1', 'top': '0'},2000);
+
+	$('.texto_3').delay(2000).animate({'opacity': '1', 'top': '0'},2000);
+
+
+
+    $(window).scroll( function(){
+
+        $('.logos_marcas').each( function(i){
+                
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                
+                /* If the object is completely visible in the window, fade it it */
+                if( bottom_of_window > bottom_of_object ){
+                    
+                    $(this).animate({'opacity': '1', 'top': '-30'},2000);
+                        
+                }
+                
+        }); 
+
+        $('.ta_4').each( function(i){
+                
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                
+                /* If the object is completely visible in the window, fade it it */
+                if( bottom_of_window > bottom_of_object ){
+                    
+                    $(this).animate({'opacity': '1', 'left': '0'},1000);
+                        
+                }
+                
+        }); 
+
+       
+        $('.logo_dis').each( function(i){
+                
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                
+                /* If the object is completely visible in the window, fade it it */
+                if( bottom_of_window > bottom_of_object ){
+                    
+                    $(this).animate({'opacity': '1', 'top': '0'},1000);
+                        
+                }
+                
+        }); 
+
+    });
+
+	$(".whatss").click(function() {
+
+		 		if($('.wht').css('display') == 'none') {
+
+		 			$( '.wht' ).css({ 'display': 'inherit' });
+		 
+
+		 		}else{
+
+		 			$( '.wht' ).css({ 'display': 'none' });
+		 		}
+
+			  
+			});
+
+ 	if ($(window).width() < 380) {
+
+ 			$("#fle_aros").click(function() {
+
+		 		if($('#aros_arriba').css('opacity') == 0) {
+
+		 			$( '#aros_arriba' ).animate({ opacity: "1" });
+		 			$( '#aros_arriba' ).fadeIn( "slow" );
+		 			$( '#aros_abajo' ).fadeOut( "slow" );
+		 			$( '.aros' ).animate({ height: "1050px" });
+
+		 		}else{
+
+		 			$( '#aros_arriba' ).animate({ opacity: "0" });
+		 			$( '#aros_arriba' ).fadeOut( "slow" );
+		 			$( '#aros_abajo' ).fadeIn( "slow" );
+		 			$( '.aros' ).animate({ height: "185px" });
+
+		 		}
+
+			  
+			});
+
+			$(".fondo_aros").click(function() {
+
+		 		if($('#aros_arriba').css('opacity') == 0) {
+
+		 			$( '#aros_arriba' ).animate({ opacity: "1" });
+		 			$( '#aros_arriba' ).fadeIn( "slow" );
+		 			$( '#aros_abajo' ).fadeOut( "slow" );
+		 			$( '.aros' ).animate({ height: "1050px" });
+
+		 		}else{
+
+		 			$( '#aros_arriba' ).animate({ opacity: "0" });
+		 			$( '#aros_arriba' ).fadeOut( "slow" );
+		 			$( '#aros_abajo' ).fadeIn( "slow" );
+		 			$( '.aros' ).animate({ height: "185px" });
+
+		 		}
+
+			  
+			});
+
+
+			$("#fle_llantas").click(function() {
+
+		 		if($('#llantas_arriba').css('opacity') == 0) {
+
+		 			$( '#llantas_arriba' ).animate({ opacity: "1" });
+		 			$( '#llantas_arriba' ).fadeIn( "slow" );
+		 			$( '#llantas_abajo' ).fadeOut( "slow" );
+		 			$( '.llantas1' ).animate({ height: "1050px" });
+
+		 		}else{
+
+		 			$( '#llantas_arriba' ).animate({ opacity: "0" });
+		 			$( '#llantas_arriba' ).fadeOut( "slow" );
+		 			$( '#llantas_abajo' ).fadeIn( "slow" );
+		 			$( '.llantas1' ).animate({ height: "185px" });
+
+		 		}
+
+			  
+			});
+			$("#fle_llantas_bus").click(function() {
+
+				if($('#llantas_arriba_bus').css('opacity') == 0) {
+
+					$( '#llantas_arriba_bus' ).animate({ opacity: "1" });
+					$( '#llantas_arriba_bus' ).fadeIn( "slow" );
+					$( '#llantas_abajo_bus' ).fadeOut( "slow" );
+					$( '.llantas1_bus' ).animate({ height: "1050px" });
+
+				}else{
+
+					$( '#llantas_arriba_bus' ).animate({ opacity: "0" });
+					$( '#llantas_arriba_bus' ).fadeOut( "slow" );
+					$( '#llantas_abajo_bus' ).fadeIn( "slow" );
+					$( '.llantas1_bus' ).animate({ height: "185px" });
+
+				}
+
+			 
+		   });
+
+			$(".fondo_llantas").click(function() {
+
+		 		if($('#llantas_arriba').css('opacity') == 0) {
+
+		 			$( '#llantas_arriba' ).animate({ opacity: "1" });
+		 			$( '#llantas_arriba' ).fadeIn( "slow" );
+		 			$( '#llantas_abajo' ).fadeOut( "slow" );
+		 			$( '.llantas1' ).animate({ height: "1050px" });
+
+		 		}else{
+
+		 			$( '#llantas_arriba' ).animate({ opacity: "0" });
+		 			$( '#llantas_arriba' ).fadeOut( "slow" );
+		 			$( '#llantas_abajo' ).fadeIn( "slow" );
+		 			$( '.llantas1' ).animate({ height: "185px" });
+
+		 		}
+
+			  
+			});
+			$(".fondo_llantas_bus").click(function() {
+
+				if($('#llantas_arriba_bus').css('opacity') == 0) {
+
+					$( '#llantas_arriba_bus' ).animate({ opacity: "1" });
+					$( '#llantas_arriba_bus' ).fadeIn( "slow" );
+					$( '#llantas_abajo_bus' ).fadeOut( "slow" );
+					$( '.llantas1_bus' ).animate({ height: "1050px" });
+
+				}else{
+
+					$( '#llantas_arriba_bus' ).animate({ opacity: "0" });
+					$( '#llantas_arriba_bus' ).fadeOut( "slow" );
+					$( '#llantas_abajo_bus' ).fadeIn( "slow" );
+					$( '.llantas1_bus' ).animate({ height: "185px" });
+
+				}
+
+			 
+		   });
+
+			$("#fle_accesorios").click(function() {
+
+		 		if($('#accesorios_arriba').css('opacity') == 0) {
+
+		 			$( '#accesorios_arriba' ).animate({ opacity: "1" });
+		 			$( '#accesorios_arriba' ).fadeIn( "slow" );
+		 			$( '#accesorios_abajo' ).fadeOut( "slow" );
+		 			$( '.accesorios' ).animate({ height: "520px" });
+
+		 		}else{
+
+		 			$( '#accesorios_arriba' ).animate({ opacity: "0" });
+		 			$( '#accesorios_arriba' ).fadeOut( "slow" );
+		 			$( '#accesorios_abajo' ).fadeIn( "slow" );
+		 			$( '.accesorios' ).animate({ height: "185px" });
+
+		 		}
+
+			  
+			});
+
+			$(".fondo_accesorios").click(function() {
+
+		 		if($('#accesorios_arriba').css('opacity') == 0) {
+
+		 			$( '#accesorios_arriba' ).animate({ opacity: "1" });
+		 			$( '#accesorios_arriba' ).fadeIn( "slow" );
+		 			$( '#accesorios_abajo' ).fadeOut( "slow" );
+		 			$( '.accesorios' ).animate({ height: "520px" });
+
+		 		}else{
+
+		 			$( '#accesorios_arriba' ).animate({ opacity: "0" });
+		 			$( '#accesorios_arriba' ).fadeOut( "slow" );
+		 			$( '#accesorios_abajo' ).fadeIn( "slow" );
+		 			$( '.accesorios' ).animate({ height: "185px" });
+
+		 		}
+
+			  
+			});
+
+
+	}else if ($(window).width() < 770){
+
+			$("#fle_aros").click(function() {
+
+		 		if($('#aros_arriba').css('opacity') == 0) {
+
+		 			$( '#aros_arriba' ).animate({ opacity: "1" });
+		 			$( '#aros_arriba' ).fadeIn( "slow" );
+		 			$( '#aros_abajo' ).fadeOut( "slow" );
+		 			$( '.aros' ).animate({ height: "1000px" });
+
+		 		}else{
+
+		 			$( '#aros_arriba' ).animate({ opacity: "0" });
+		 			$( '#aros_arriba' ).fadeOut( "slow" );
+		 			$( '#aros_abajo' ).fadeIn( "slow" );
+		 			$( '.aros' ).animate({ height: "185px" });
+
+		 		}
+
+			  
+			});
+
+			$(".fondo_aros").click(function() {
+
+		 		if($('#aros_arriba').css('opacity') == 0) {
+
+		 			$( '#aros_arriba' ).animate({ opacity: "1" });
+		 			$( '#aros_arriba' ).fadeIn( "slow" );
+		 			$( '#aros_abajo' ).fadeOut( "slow" );
+		 			$( '.aros' ).animate({ height: "1000px" });
+
+		 		}else{
+
+		 			$( '#aros_arriba' ).animate({ opacity: "0" });
+		 			$( '#aros_arriba' ).fadeOut( "slow" );
+		 			$( '#aros_abajo' ).fadeIn( "slow" );
+		 			$( '.aros' ).animate({ height: "185px" });
+
+		 		}
+
+			  
+			});
+
+
+			$("#fle_llantas").click(function() {
+
+		 		if($('#llantas_arriba').css('opacity') == 0) {
+
+		 			$( '#llantas_arriba' ).animate({ opacity: "1" });
+		 			$( '#llantas_arriba' ).fadeIn( "slow" );
+		 			$( '#llantas_abajo' ).fadeOut( "slow" );
+		 			$( '.llantas1' ).animate({ height: "1000px" });
+
+		 		}else{
+
+		 			$( '#llantas_arriba' ).animate({ opacity: "0" });
+		 			$( '#llantas_arriba' ).fadeOut( "slow" );
+		 			$( '#llantas_abajo' ).fadeIn( "slow" );
+		 			$( '.llantas1' ).animate({ height: "185px" });
+
+		 		}
+
+			  
+			});
+
+			$("#fle_llantas_bus").click(function() {
+
+				if($('#llantas_arriba_bus').css('opacity') == 0) {
+
+					$( '#llantas_arriba_bus' ).animate({ opacity: "1" });
+					$( '#llantas_arriba_bus' ).fadeIn( "slow" );
+					$( '#llantas_abajo_bus' ).fadeOut( "slow" );
+					$( '.llantas1_bus' ).animate({ height: "1000px" });
+
+				}else{
+
+					$( '#llantas_arriba_bus' ).animate({ opacity: "0" });
+					$( '#llantas_arriba_bus' ).fadeOut( "slow" );
+					$( '#llantas_abajo_bus' ).fadeIn( "slow" );
+					$( '.llantas1_bus' ).animate({ height: "185px" });
+
+				}
+
+			 
+		   });
+
+			$(".fondo_llantas").click(function() {
+
+		 		if($('#llantas_arriba').css('opacity') == 0) {
+
+		 			$( '#llantas_arriba' ).animate({ opacity: "1" });
+		 			$( '#llantas_arriba' ).fadeIn( "slow" );
+		 			$( '#llantas_abajo' ).fadeOut( "slow" );
+		 			$( '.llantas1' ).animate({ height: "1000px" });
+
+		 		}else{
+
+		 			$( '#llantas_arriba' ).animate({ opacity: "0" });
+		 			$( '#llantas_arriba' ).fadeOut( "slow" );
+		 			$( '#llantas_abajo' ).fadeIn( "slow" );
+		 			$( '.llantas1' ).animate({ height: "185px" });
+
+		 		}
+
+			  
+			});
+
+			$(".fondo_llantas_bus").click(function() {
+
+				if($('#llantas_arriba_bus').css('opacity') == 0) {
+
+					$( '#llantas_arriba_bus' ).animate({ opacity: "1" });
+					$( '#llantas_arriba_bus' ).fadeIn( "slow" );
+					$( '#llantas_abajo_bus' ).fadeOut( "slow" );
+					$( '.llantas1_bus' ).animate({ height: "1000px" });
+
+				}else{
+
+					$( '#llantas_arriba_bus' ).animate({ opacity: "0" });
+					$( '#llantas_arriba_bus' ).fadeOut( "slow" );
+					$( '#llantas_abajo_bus' ).fadeIn( "slow" );
+					$( '.llantas1_bus' ).animate({ height: "185px" });
+
+				}
+
+			 
+		   });
+
+			$("#fle_accesorios").click(function() {
+
+		 		if($('#accesorios_arriba').css('opacity') == 0) {
+
+		 			$( '#accesorios_arriba' ).animate({ opacity: "1" });
+		 			$( '#accesorios_arriba' ).fadeIn( "slow" );
+		 			$( '#accesorios_abajo' ).fadeOut( "slow" );
+		 			$( '.accesorios' ).animate({ height: "400px" });
+
+		 		}else{
+
+		 			$( '#accesorios_arriba' ).animate({ opacity: "0" });
+		 			$( '#accesorios_arriba' ).fadeOut( "slow" );
+		 			$( '#accesorios_abajo' ).fadeIn( "slow" );
+		 			$( '.accesorios' ).animate({ height: "185px" });
+
+		 		}
+
+			  
+			});
+
+			$(".fondo_accesorios").click(function() {
+
+		 		if($('#accesorios_arriba').css('opacity') == 0) {
+
+		 			$( '#accesorios_arriba' ).animate({ opacity: "1" });
+		 			$( '#accesorios_arriba' ).fadeIn( "slow" );
+		 			$( '#accesorios_abajo' ).fadeOut( "slow" );
+		 			$( '.accesorios' ).animate({ height: "400px" });
+
+		 		}else{
+
+		 			$( '#accesorios_arriba' ).animate({ opacity: "0" });
+		 			$( '#accesorios_arriba' ).fadeOut( "slow" );
+		 			$( '#accesorios_abajo' ).fadeIn( "slow" );
+		 			$( '.accesorios' ).animate({ height: "185px" });
+
+		 		}
+
+			  
+			});
+		  
+	
+	}else{
+
+		 	$("#fle_aros").click(function() {
+
+		 		if($('#aros_arriba').css('opacity') == 0) {
+
+		 			$( '#aros_arriba' ).animate({ opacity: "1" });
+		 			$( '#aros_arriba' ).fadeIn( "slow" );
+		 			$( '#aros_abajo' ).fadeOut( "slow" );
+		 			$( '.aros' ).animate({ height: "800px" });
+
+		 		}else{
+
+		 			$( '#aros_arriba' ).animate({ opacity: "0" });
+		 			$( '#aros_arriba' ).fadeOut( "slow" );
+		 			$( '#aros_abajo' ).fadeIn( "slow" );
+		 			$( '.aros' ).animate({ height: "185px" });
+
+		 		}
+
+			  
+			});
+
+			$(".fondo_aros").click(function() {
+
+		 		if($('#aros_arriba').css('opacity') == 0) {
+
+		 			$( '#aros_arriba' ).animate({ opacity: "1" });
+		 			$( '#aros_arriba' ).fadeIn( "slow" );
+		 			$( '#aros_abajo' ).fadeOut( "slow" );
+		 			$( '.aros' ).animate({ height: "800px" });
+
+		 		}else{
+
+		 			$( '#aros_arriba' ).animate({ opacity: "0" });
+		 			$( '#aros_arriba' ).fadeOut( "slow" );
+		 			$( '#aros_abajo' ).fadeIn( "slow" );
+		 			$( '.aros' ).animate({ height: "185px" });
+
+		 		}
+
+			  
+			});
+
+
+			$("#fle_llantas").click(function() {
+
+		 		if($('#llantas_arriba').css('opacity') == 0) {
+
+		 			$( '#llantas_arriba' ).animate({ opacity: "1" });
+		 			$( '#llantas_arriba' ).fadeIn( "slow" );
+		 			$( '#llantas_abajo' ).fadeOut( "slow" );
+		 			$( '.llantas1' ).animate({ height: "800px" });
+
+		 		}else{
+
+		 			$( '#llantas_arriba' ).animate({ opacity: "0" });
+		 			$( '#llantas_arriba' ).fadeOut( "slow" );
+		 			$( '#llantas_abajo' ).fadeIn( "slow" );
+		 			$( '.llantas1' ).animate({ height: "185px" });
+
+		 		}
+
+			  
+			});
+			$("#fle_llantas_bus").click(function() {
+
+				if($('#llantas_arriba_bus').css('opacity') == 0) {
+
+					$( '#llantas_arriba_bus' ).animate({ opacity: "1" });
+					$( '#llantas_arriba_bus' ).fadeIn( "slow" );
+					$( '#llantas_abajo_bus' ).fadeOut( "slow" );
+					$( '.llantas1_bus' ).animate({ height: "800px" });
+
+				}else{
+
+					$( '#llantas_arriba_bus' ).animate({ opacity: "0" });
+					$( '#llantas_arriba_bus' ).fadeOut( "slow" );
+					$( '#llantas_abajo_bus' ).fadeIn( "slow" );
+					$( '.llantas1_bus' ).animate({ height: "185px" });
+
+				}
+
+			 
+		   });
+			$(".fondo_llantas").click(function() {
+
+		 		if($('#llantas_arriba').css('opacity') == 0) {
+
+		 			$( '#llantas_arriba' ).animate({ opacity: "1" });
+		 			$( '#llantas_arriba' ).fadeIn( "slow" );
+		 			$( '#llantas_abajo' ).fadeOut( "slow" );
+		 			$( '.llantas1' ).animate({ height: "800px" });
+
+		 		}else{
+
+		 			$( '#llantas_arriba' ).animate({ opacity: "0" });
+		 			$( '#llantas_arriba' ).fadeOut( "slow" );
+		 			$( '#llantas_abajo' ).fadeIn( "slow" );
+		 			$( '.llantas1' ).animate({ height: "185px" });
+
+		 		}
+
+			  
+			});
+
+			$(".fondo_llantas_bus").click(function() {
+
+				if($('#llantas_arriba_bus').css('opacity') == 0) {
+
+					$( '#llantas_arriba_bus' ).animate({ opacity: "1" });
+					$( '#llantas_arriba_bus' ).fadeIn( "slow" );
+					$( '#llantas_abajo_bus' ).fadeOut( "slow" );
+					$( '.llantas1_bus' ).animate({ height: "800px" });
+
+				}else{
+
+					$( '#llantas_arriba_bus' ).animate({ opacity: "0" });
+					$( '#llantas_arriba_bus' ).fadeOut( "slow" );
+					$( '#llantas_abajo_bus' ).fadeIn( "slow" );
+					$( '.llantas1' ).animate({ height: "185px" });
+
+				}
+
+			 
+		   });
+
+			$("#fle_accesorios").click(function() {
+
+		 		if($('#accesorios_arriba').css('opacity') == 0) {
+
+		 			$( '#accesorios_arriba' ).animate({ opacity: "1" });
+		 			$( '#accesorios_arriba' ).fadeIn( "slow" );
+		 			$( '#accesorios_abajo' ).fadeOut( "slow" );
+		 			$( '.accesorios' ).animate({ height: "350px" });
+
+		 		}else{
+
+		 			$( '#accesorios_arriba' ).animate({ opacity: "0" });
+		 			$( '#accesorios_arriba' ).fadeOut( "slow" );
+		 			$( '#accesorios_abajo' ).fadeIn( "slow" );
+		 			$( '.accesorios' ).animate({ height: "185px" });
+
+		 		}
+
+			  
+			});
+
+			$(".fondo_accesorios").click(function() {
+
+		 		if($('#accesorios_arriba').css('opacity') == 0) {
+
+		 			$( '#accesorios_arriba' ).animate({ opacity: "1" });
+		 			$( '#accesorios_arriba' ).fadeIn( "slow" );
+		 			$( '#accesorios_abajo' ).fadeOut( "slow" );
+		 			$( '.accesorios' ).animate({ height: "350px" });
+
+		 		}else{
+
+		 			$( '#accesorios_arriba' ).animate({ opacity: "0" });
+		 			$( '#accesorios_arriba' ).fadeOut( "slow" );
+		 			$( '#accesorios_abajo' ).fadeIn( "slow" );
+		 			$( '.accesorios' ).animate({ height: "185px" });
+
+		 		}
+
+			  
+			});
+
+	}
+
+
+	if ($(window).width() < 380) {
+
+			$("#momo_delante").click(function() {
+
+				$( '#momo_tras' ).animate({ opacity: "1" });
+
+		 		if($('.estante').position().left > -2332){
+
+		 			$( '.estante' ).animate({ left: "-=212px" });
+
+		 		}else{
+
+		 			$( '.estante' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+
+			$("#momo_tras").click(function() {
+
+		 		if($('.estante').position().left < 10){
+
+		 			$( '.estante' ).animate({ left: "+=212px" });
+
+		 		}else{
+
+		 			$( '.estante' ).animate({ left: "+=0px" });
+		 			$( '#momo_tras' ).animate({ opacity: "0" });
+
+		 		}
+
+			  
+			});
+
+			$("#hrs_a_delante").click(function() {
+
+				$( '#hrs_a_tras' ).animate({ opacity: "1" });
+
+		 		if($('.estante1').position().left > -7632){
+
+		 			$( '.estante1' ).animate({ left: "-=212px" });
+
+		 		}else{
+
+		 			$( '.estante1' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#hrs_a_tras").click(function() {
+
+		 		if($('.estante1').position().left < 10){
+
+		 			$( '.estante1' ).animate({ left: "+=212px" });
+
+		 		}else{
+
+		 			$( '.estante1' ).animate({ left: "+=0px" });
+		 			$( '#hrs_a_tras' ).animate({ opacity: "0" });
+
+		 		}
+
+			  
+			});
+
+			$("#hrs_4_delante").click(function() {
+
+				$( '#hrs_4_tras' ).animate({ opacity: "1" });
+
+		 		if($('.estante2').position().left > -1272){
+
+		 			$( '.estante2' ).animate({ left: "-=212px" });
+
+		 		}else{
+
+		 			$( '.estante2' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#hrs_4_tras").click(function() {
+
+		 		if($('.estante2').position().left < 10){
+
+		 			$( '.estante2' ).animate({ left: "+=212px" });
+
+		 		}else{
+
+		 			$( '.estante2' ).animate({ left: "+=0px" });
+		 			$( '#hrs_4_tras' ).animate({ opacity: "0" });
+
+		 		}
+
+			  
+			});
+
+
+			$("#ballis_delante").click(function() {
+
+				$( '#ballis_tras' ).animate({ opacity: "1" });
+
+		 		if($('.estante3').position().left > -848){
+
+		 			$( '.estante3' ).animate({ left: "-=212px" });
+
+		 		}else{
+
+		 			$( '.estante3' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#ballis_tras").click(function() {
+
+		 		if($('.estante3').position().left < 10){
+
+		 			$( '.estante3' ).animate({ left: "+=212px" });
+
+		 		}else{
+
+		 			$( '.estante3' ).animate({ left: "+=0px" });
+		 			$( '#ballis_tras' ).animate({ opacity: "0" });
+
+		 		}
+
+			  
+			});
+
+			$("#hero_delante").click(function() {
+
+				$( '#hero_tras' ).animate({ opacity: "1" });
+
+		 		if($('.estante4').position().left > -424){
+
+		 			$( '.estante4' ).animate({ left: "-=212px" });
+
+		 		}else{
+
+		 			$( '.estante4' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#hero_delante_bus").click(function() {
+
+				$( '#hero_tras_bus' ).animate({ opacity: "1" });
+
+		 		if($('.estante4_bus').position().left > -424){
+
+		 			$( '.estante4_bus' ).animate({ left: "-=212px" });
+
+		 		}else{
+
+		 			$( '.estante4_bus' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#hero_tras").click(function() {
+
+		 		if($('.estante4').position().left < 10){
+
+		 			$( '.estante4' ).animate({ left: "+=212px" });
+
+		 		}else{
+
+		 			$( '.estante4' ).animate({ left: "+=0px" });
+		 			$( '#hero_tras' ).animate({ opacity: "0" });
+
+		 		}
+
+			  
+			});
+
+			$("#hero_tras_bus").click(function() {
+
+				if($('.estante4_bus').position().left < 10){
+
+					$( '.estante4_bus' ).animate({ left: "+=212px" });
+
+				}else{
+
+					$( '.estante4_bus' ).animate({ left: "+=0px" });
+					$( '#hero_tras_bus' ).animate({ opacity: "0" });
+
+				}
+
+			 
+		   });
+
+
+			$("#confor_delante").click(function() {
+
+				$( '#confor_tras' ).animate({ opacity: "1" });
+
+		 		if($('.estante5').position().left > -424){
+
+		 			$( '.estante5' ).animate({ left: "-=212px" });
+
+		 		}else{
+
+		 			$( '.estante5' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#confor_delante_bus").click(function() {
+
+				$( '#confor_tras_bus' ).animate({ opacity: "1" });
+
+		 		if($('.estante5_bus').position().left > -424){
+
+		 			$( '.estante5_bus' ).animate({ left: "-=212px" });
+
+		 		}else{
+
+		 			$( '.estante5_bus' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#confor_tras").click(function() {
+
+		 		if($('.estante5').position().left < 10){
+
+		 			$( '.estante5' ).animate({ left: "+=212px" });
+
+		 		}else{
+
+		 			$( '.estante5' ).animate({ left: "+=0px" });
+		 			$( '#confor_tras' ).animate({ opacity: "0" });
+
+		 		}
+
+			  
+			});
+
+			$("#confor_tras_bus").click(function() {
+
+				if($('.estante5_bus').position().left < 10){
+
+					$( '.estante5_bus' ).animate({ left: "+=212px" });
+
+				}else{
+
+					$( '.estante5_bus' ).animate({ left: "+=0px" });
+					$( '#confor_tras_bus' ).animate({ opacity: "0" });
+
+				}
+
+			 
+		   });
+
+			$("#sunny_delante").click(function() {
+
+				$( '#sunny_tras' ).animate({ opacity: "1" });
+
+		 		if($('.estante6').position().left > -424){
+
+		 			$( '.estante6' ).animate({ left: "-=212px" });
+
+		 		}else{
+
+		 			$( '.estante6' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+			$("#sunny_delante_bus").click(function() {
+
+				$( '#sunny_tras_bus' ).animate({ opacity: "1" });
+
+		 		if($('.estante6_bus').position().left > -424){
+
+		 			$( '.estante6_bus' ).animate({ left: "-=212px" });
+
+		 		}else{
+
+		 			$( '.estante6_bus' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#sunny_tras").click(function() {
+
+		 		if($('.estante6').position().left < 10){
+
+		 			$( '.estante6' ).animate({ left: "+=212px" });
+
+		 		}else{
+
+		 			$( '.estante6' ).animate({ left: "+=0px" });
+		 			$( '#sunny_tras' ).animate({ opacity: "0" });
+
+		 		}
+
+			  
+			});
+
+			$("#sunny_tras_bus").click(function() {
+
+				if($('.estante6_bus').position().left < 10){
+
+					$( '.estante6_bus' ).animate({ left: "+=212px" });
+
+				}else{
+
+					$( '.estante6_bus' ).animate({ left: "+=0px" });
+					$( '#sunny_tras_bus' ).animate({ opacity: "0" });
+
+				}
+
+			 
+		   });
+
+			$("#dunlop_delante").click(function() {
+
+				$( '#dunlop_tras' ).animate({ opacity: "1" });
+
+		 		if($('.estante8').position().left > -424){
+
+		 			$( '.estante8' ).animate({ left: "-=212px" });
+
+		 		}else{
+
+		 			$( '.estante8' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#dunlop_delante_bus").click(function() {
+
+				$( '#dunlop_tras_bus' ).animate({ opacity: "1" });
+
+		 		if($('.estante8_bus').position().left > -424){
+
+		 			$( '.estante8_bus' ).animate({ left: "-=212px" });
+
+		 		}else{
+
+		 			$( '.estante8_bus' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#dunlop_tras").click(function() {
+
+		 		if($('.estante8').position().left < 10){
+
+		 			$( '.estante8' ).animate({ left: "+=212px" });
+
+		 		}else{
+
+		 			$( '.estante8' ).animate({ left: "+=0px" });
+		 			$( '#dunlop_tras' ).animate({ opacity: "0" });
+
+		 		}
+
+			  
+			});
+
+			$("#dunlop_tras_bus").click(function() {
+
+				if($('.estante8_bus').position().left < 10){
+
+					$( '.estante8_bus' ).animate({ left: "+=212px" });
+
+				}else{
+
+					$( '.estante8_bus' ).animate({ left: "+=0px" });
+					$( '#dunlop_tras_bus' ).animate({ opacity: "0" });
+
+				}
+
+			 
+		   });
+
+			$("#toyo_delante").click(function() {
+
+				$( '#toyo_tras' ).animate({ opacity: "1" });
+
+		 		if($('.estante9').position().left > -636){
+
+		 			$( '.estante9' ).animate({ left: "-=212px" });
+
+		 		}else{
+
+		 			$( '.estante9' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#toyo_delante_bus").click(function() {
+
+				$( '#toyo_tras_bus' ).animate({ opacity: "1" });
+
+		 		if($('.estante9_bus').position().left > -636){
+
+		 			$( '.estante9_bus' ).animate({ left: "-=212px" });
+
+		 		}else{
+
+		 			$( '.estante9_bus' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#toyo_tras").click(function() {
+
+		 		if($('.estante9').position().left < 10){
+
+		 			$( '.estante9' ).animate({ left: "+=212px" });
+
+		 		}else{
+
+		 			$( '.estante9' ).animate({ left: "+=0px" });
+		 			$( '#toyo_tras' ).animate({ opacity: "0" });
+
+		 		}
+
+			  
+			});
+
+			$("#toyo_tras_bus").click(function() {
+
+				if($('.estante9_bus').position().left < 10){
+
+					$( '.estante9_bus' ).animate({ left: "+=212px" });
+
+				}else{
+
+					$( '.estante9_bus' ).animate({ left: "+=0px" });
+					$( '#toyo_tras_bus' ).animate({ opacity: "0" });
+
+				}
+
+			 
+		   });
+
+
+			$("#maxxis_delante").click(function() {
+
+				$( '#maxxis_tras' ).animate({ opacity: "1" });
+
+		 		if($('.estante10').position().left > -1060){
+
+		 			$( '.estante10' ).animate({ left: "-=212px" });
+
+		 		}else{
+
+		 			$( '.estante10' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#maxxis_delante_bus").click(function() {
+
+				$( '#maxxis_tras_bus' ).animate({ opacity: "1" });
+
+		 		if($('.estante10_bus').position().left > -1060){
+
+		 			$( '.estante10_bus' ).animate({ left: "-=212px" });
+
+		 		}else{
+
+		 			$( '.estante10_bus' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+
+			$("#maxxis_tras").click(function() {
+
+		 		if($('.estante10').position().left < 10){
+
+		 			$( '.estante10' ).animate({ left: "+=212px" });
+
+		 		}else{
+
+		 			$( '.estante10' ).animate({ left: "+=0px" });
+		 			$( '#maxxis_tras' ).animate({ opacity: "0" });
+
+		 		}
+
+			  
+			});
+
+			$("#maxxis_tras_bus").click(function() {
+
+				if($('.estante10_bus').position().left < 10){
+
+					$( '.estante10_bus' ).animate({ left: "+=212px" });
+
+				}else{
+
+					$( '.estante10_bus' ).animate({ left: "+=0px" });
+					$( '#maxxis_tras_bus' ).animate({ opacity: "0" });
+
+				}
+
+			 
+		   });
+
+
+	}else{
+
+			$("#momo_delante").click(function() {
+
+				$( '#momo_tras' ).animate({ opacity: "1" });
+
+		 		if($('.estante').position().left > -1060){
+
+		 			$( '.estante' ).animate({ left: "-=636px" });
+
+		 		}else{
+
+		 			$( '.estante' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#momo_tras").click(function() {
+
+		 		if($('.estante').position().left < 10){
+
+		 			$( '.estante' ).animate({ left: "+=636px" });
+
+		 		}else{
+
+		 			$( '.estante' ).animate({ left: "+=0px" });
+		 			$( '#momo_tras' ).animate({ opacity: "0" });
+
+		 		}
+
+			  
+			});
+
+			$("#hrs_a_delante").click(function() {
+
+				$( '#hrs_a_tras' ).animate({ opacity: "1" });
+
+		 		if($('.estante1').position().left > -6996){
+
+		 			$( '.estante1' ).animate({ left: "-=636px" });
+
+		 		}else{
+
+		 			$( '.estante1' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#hrs_a_tras").click(function() {
+
+		 		if($('.estante1').position().left < 10){
+
+		 			$( '.estante1' ).animate({ left: "+=636px" });
+
+		 		}else{
+
+		 			$( '.estante1' ).animate({ left: "+=0px" });
+		 			$( '#hrs_a_tras' ).animate({ opacity: "0" });
+
+		 		}
+
+			  
+			});
+
+			$("#hrs_4_delante").click(function() {
+
+				$( '#hrs_4_tras' ).animate({ opacity: "1" });
+
+		 		if($('.estante2').position().left > -636){
+
+		 			$( '.estante2' ).animate({ left: "-=636px" });
+
+		 		}else{
+
+		 			$( '.estante2' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#hrs_4_tras").click(function() {
+
+		 		if($('.estante2').position().left < 10){
+
+		 			$( '.estante2' ).animate({ left: "+=636px" });
+
+		 		}else{
+
+		 			$( '.estante2' ).animate({ left: "+=0px" });
+		 			$( '#hrs_4_tras' ).animate({ opacity: "0" });
+
+		 		}
+
+			  
+			});
+
+
+			$("#ballis_delante").click(function() {
+
+				$( '#ballis_tras' ).animate({ opacity: "1" });
+
+		 		if($('.estante3').position().left > 0){
+
+		 			$( '.estante3' ).animate({ left: "-=636px" });
+
+		 		}else{
+
+		 			$( '.estante3' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#ballis_tras").click(function() {
+
+		 		if($('.estante3').position().left < 10){
+
+		 			$( '.estante3' ).animate({ left: "+=636px" });
+
+		 		}else{
+
+		 			$( '.estante3' ).animate({ left: "+=0px" });
+		 			$( '#ballis_tras' ).animate({ opacity: "0" });
+
+		 		}
+
+			  
+			});
+
+			$("#hero_delante").click(function() {
+
+				$( '#hero_tras' ).animate({ opacity: "1" });
+
+		 		if($('.estante4').position().left > 0){
+
+		 			$( '.estante4' ).animate({ left: "-=636px" });
+
+		 		}else{
+
+		 			$( '.estante4' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#hero_delante_bus").click(function() {
+
+				$( '#hero_tras_bus' ).animate({ opacity: "1" });
+
+		 		if($('.estante4_bus').position().left > 0){
+
+		 			$( '.estante4_bus' ).animate({ left: "-=636px" });
+
+		 		}else{
+
+		 			$( '.estante4_bus' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#hero_tras").click(function() {
+
+		 		if($('.estante4').position().left < 10){
+
+		 			$( '.estante4' ).animate({ left: "+=636px" });
+
+		 		}else{
+
+		 			$( '.estante4' ).animate({ left: "+=0px" });
+		 			$( '#hero_tras' ).animate({ opacity: "0" });
+
+		 		}
+
+			  
+			});
+
+			$("#hero_tras_bus").click(function() {
+
+				if($('.estante4_bus').position().left < 10){
+
+					$( '.estante4_bus' ).animate({ left: "+=636px" });
+
+				}else{
+
+					$( '.estante4_bus' ).animate({ left: "+=0px" });
+					$( '#hero_tras_bus' ).animate({ opacity: "0" });
+
+				}
+
+			 
+		   });
+
+
+			$("#confor_delante").click(function() {
+
+				$( '#confor_tras' ).animate({ opacity: "1" });
+
+		 		if($('.estante5').position().left > 0){
+
+		 			$( '.estante5' ).animate({ left: "-=636px" });
+
+		 		}else{
+
+		 			$( '.estante5' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+
+			$("#confor_delante_bus").click(function() {
+
+				$( '#confor_tras_bus' ).animate({ opacity: "1" });
+
+		 		if($('.estante5_bus').position().left > 0){
+
+		 			$( '.estante5_bus' ).animate({ left: "-=636px" });
+
+		 		}else{
+
+		 			$( '.estante5_bus' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#confor_tras").click(function() {
+
+		 		if($('.estante5').position().left < 10){
+
+		 			$( '.estante5' ).animate({ left: "+=636px" });
+
+		 		}else{
+
+		 			$( '.estante5' ).animate({ left: "+=0px" });
+		 			$( '#confor_tras' ).animate({ opacity: "0" });
+
+		 		}
+
+			  
+			});
+
+			$("#confor_tras_bus").click(function() {
+
+				if($('.estante5_bus').position().left < 10){
+
+					$( '.estante5_bus' ).animate({ left: "+=636px" });
+
+				}else{
+
+					$( '.estante5_bus' ).animate({ left: "+=0px" });
+					$( '#confor_tras_bus' ).animate({ opacity: "0" });
+
+				}
+
+			 
+		   });
+
+			$("#sunny_delante").click(function() {
+
+				$( '#sunny_tras' ).animate({ opacity: "1" });
+
+		 		if($('.estante6').position().left > 0){
+
+		 			$( '.estante6' ).animate({ left: "-=636px" });
+
+		 		}else{
+
+		 			$( '.estante6' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#sunny_delante_bus").click(function() {
+
+				$( '#sunny_tras_bus' ).animate({ opacity: "1" });
+
+		 		if($('.estante6_bus').position().left > 0){
+
+		 			$( '.estante6_bus' ).animate({ left: "-=636px" });
+
+		 		}else{
+
+		 			$( '.estante6_bus' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#sunny_tras").click(function() {
+
+		 		if($('.estante6').position().left < 10){
+
+		 			$( '.estante6' ).animate({ left: "+=636px" });
+
+		 		}else{
+
+		 			$( '.estante6' ).animate({ left: "+=0px" });
+		 			$( '#sunny_tras' ).animate({ opacity: "0" });
+
+		 		}
+
+			  
+			});
+
+			$("#sunny_tras_bus").click(function() {
+
+				if($('.estante6_bus').position().left < 10){
+
+					$( '.estante6_bus' ).animate({ left: "+=636px" });
+
+				}else{
+
+					$( '.estante6_bus' ).animate({ left: "+=0px" });
+					$( '#sunny_tras_bus' ).animate({ opacity: "0" });
+
+				}
+
+			 
+		   });
+
+			$("#dunlop_delante").click(function() {
+
+				$( '#dunlop_tras' ).animate({ opacity: "1" });
+
+		 		if($('.estante8').position().left > 0){
+
+		 			$( '.estante8' ).animate({ left: "-=636px" });
+
+		 		}else{
+
+		 			$( '.estante8' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#dunlop_delante_bus").click(function() {
+
+				$( '#dunlop_tras_bus' ).animate({ opacity: "1" });
+
+		 		if($('.estante8_bus').position().left > 0){
+
+		 			$( '.estante8_bus' ).animate({ left: "-=636px" });
+
+		 		}else{
+
+		 			$( '.estante8_bus' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#dunlop_tras").click(function() {
+
+		 		if($('.estante8').position().left < 10){
+
+		 			$( '.estante8' ).animate({ left: "+=636px" });
+
+		 		}else{
+
+		 			$( '.estante8' ).animate({ left: "+=0px" });
+		 			$( '#dunlop_tras' ).animate({ opacity: "0" });
+
+		 		}
+
+			  
+			});
+
+			$("#dunlop_tras_bus").click(function() {
+
+				if($('.estante8_bus').position().left < 10){
+
+					$( '.estante8_bus' ).animate({ left: "+=636px" });
+
+				}else{
+
+					$( '.estante8_bus' ).animate({ left: "+=0px" });
+					$( '#dunlop_tras_bus' ).animate({ opacity: "0" });
+
+				}
+
+			 
+		   });
+
+
+			$("#toyo_delante").click(function() {
+
+				$( '#toyo_tras' ).animate({ opacity: "1" });
+
+		 		if($('.estante9').position().left > 0){
+
+		 			$( '.estante9' ).animate({ left: "-=636px" });
+
+		 		}else{
+
+		 			$( '.estante9' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#toyo_delante_bus").click(function() {
+
+				$( '#toyo_tras_bus' ).animate({ opacity: "1" });
+
+		 		if($('.estante9_bus').position().left > 0){
+
+		 			$( '.estante9_bus' ).animate({ left: "-=636px" });
+
+		 		}else{
+
+		 			$( '.estante9_bus' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#toyo_tras").click(function() {
+
+		 		if($('.estante9').position().left < 10){
+
+		 			$( '.estante9' ).animate({ left: "+=636px" });
+
+		 		}else{
+
+		 			$( '.estante9' ).animate({ left: "+=0px" });
+		 			$( '#toyo_tras' ).animate({ opacity: "0" });
+
+		 		}
+
+			  
+			});
+
+			$("#toyo_tras_bus").click(function() {
+
+				if($('.estante9_bus').position().left < 10){
+
+					$( '.estante9_bus' ).animate({ left: "+=636px" });
+
+				}else{
+
+					$( '.estante9_bus' ).animate({ left: "+=0px" });
+					$( '#toyo_tras_bus' ).animate({ opacity: "0" });
+
+				}
+
+			 
+		   });
+
+
+			$("#maxxis_delante").click(function() {
+
+				$( '#maxxis_tras' ).animate({ opacity: "1" });
+
+		 		if($('.estante10').position().left > -212){
+
+		 			$( '.estante10' ).animate({ left: "-=212px" });
+
+		 		}else{
+
+		 			$( '.estante10' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+			$("#maxxis_delante_bus").click(function() {
+
+				$( '#maxxis_tras_bus' ).animate({ opacity: "1" });
+
+		 		if($('.estante10_bus').position().left > -212){
+
+		 			$( '.estante10_bus' ).animate({ left: "-=212px" });
+
+		 		}else{
+
+		 			$( '.estante10_bus' ).animate({ left: "-=0px" });
+
+		 		}
+
+			  
+			});
+
+
+			$("#maxxis_tras").click(function() {
+
+		 		if($('.estante10').position().left < 10){
+
+		 			$( '.estante10' ).animate({ left: "+=212px" });
+
+		 		}else{
+
+		 			$( '.estante10' ).animate({ left: "+=0px" });
+		 			$( '#maxxis_tras' ).animate({ opacity: "0" });
+
+		 		}
+
+			  
+			});
+
+			$("#maxxis_tras_bus").click(function() {
+
+				if($('.estante10_bus').position().left < 10){
+
+					$( '.estante10_bus' ).animate({ left: "+=212px" });
+
+				}else{
+
+					$( '.estante10_bus' ).animate({ left: "+=0px" });
+					$( '#maxxis_tras_bus' ).animate({ opacity: "0" });
+
+				}
+
+			 
+		   });
+
+	}
+
+
+	$("#momo_selc").click(function() {
+
+		$( '#momo_selc' ).css({ 'text-decoration': "underline" });
+		$( '#hrs_selc' ).css({ 'text-decoration': "none" });
+		$( '#hrs1_selc' ).css({ 'text-decoration': "none" });
+		$( '#ballistic_selc' ).css({ 'text-decoration': "none" });
+		$( '#dunlop_selc' ).css({ 'text-decoration': "none" });
+		$( '#toyo_selc' ).css({ 'text-decoration': "none" });
+		$( '#maxxis_selc' ).css({ 'text-decoration': "none" });
+
+		$( '#momo' ).delay(200).fadeIn( "slow" );
+		$( '#hrs_a' ).fadeOut( "fast" );
+		$( '#hrs_4' ).fadeOut( "fast" );
+		$( '#ballis' ).fadeOut( "fast" );
+		$( '#dunlop' ).fadeOut( "fast" );
+		$( '#toyo' ).fadeOut( "fast" );
+		$( '#maxxis' ).fadeOut( "fast" );
+
+
+
+	});
+
+		$("#momo_selc_bus").click(function() {
+
+		$( '#momo_selc_bus' ).css({ 'text-decoration': "underline" });
+		$( '#hrs_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#hrs1_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#ballistic_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#dunlop_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#toyo_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#maxxis_selc_bus' ).css({ 'text-decoration': "none" });
+
+		$( '#momo_bus' ).delay(200).fadeIn( "slow" );
+		$( '#hrs_a_bus' ).fadeOut( "fast" );
+		$( '#hrs_4_bus' ).fadeOut( "fast" );
+		$( '#ballis_bus' ).fadeOut( "fast" );
+		$( '#dunlop_bus' ).fadeOut( "fast" );
+		$( '#toyo_bus' ).fadeOut( "fast" );
+		$( '#maxxis_bus' ).fadeOut( "fast" );
+
+
+
+	});
+
+	$("#hrs_selc").click(function() {
+
+		$( '#momo_selc' ).css({ 'text-decoration': "none" });
+		$( '#hrs_selc' ).css({ 'text-decoration': "underline" });
+		$( '#hrs1_selc' ).css({ 'text-decoration': "none" });
+		$( '#ballistic_selc' ).css({ 'text-decoration': "none" });
+		$( '#dunlop_selc' ).css({ 'text-decoration': "none" });
+		$( '#toyo_selc' ).css({ 'text-decoration': "none" });
+		$( '#maxxis_selc' ).css({ 'text-decoration': "none" });;
+
+		$( '#momo' ).fadeOut( "fast" );
+		$( '#hrs_a' ).delay(200).fadeIn( "slow" );
+		$( '#hrs_4' ).fadeOut( "fast" );
+		$( '#ballis' ).fadeOut( "fast" );
+		$( '#dunlop' ).fadeOut( "fast" );
+		$( '#toyo' ).fadeOut( "fast" );
+		$( '#maxxis' ).fadeOut( "fast" );
+
+
+	});
+
+	$("#hrs_selc_bus").click(function() {
+
+		$( '#momo_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#hrs_selc_bus' ).css({ 'text-decoration': "underline" });
+		$( '#hrs1_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#ballistic_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#dunlop_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#toyo_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#maxxis_selc_bus' ).css({ 'text-decoration': "none" });;
+
+		$( '#momo_bus' ).fadeOut( "fast" );
+		$( '#hrs_a_bus' ).delay(200).fadeIn( "slow" );
+		$( '#hrs_4_bus' ).fadeOut( "fast" );
+		$( '#ballis_bus' ).fadeOut( "fast" );
+		$( '#dunlop_bus' ).fadeOut( "fast" );
+		$( '#toyo_bus' ).fadeOut( "fast" );
+		$( '#maxxis_bus' ).fadeOut( "fast" );
+
+
+	});
+
+	$("#hrs1_selc").click(function() {
+
+		$( '#momo_selc' ).css({ 'text-decoration': "none" });
+		$( '#hrs_selc' ).css({ 'text-decoration': "none" });
+		$( '#hrs1_selc' ).css({ 'text-decoration': "underline" });
+		$( '#ballistic_selc' ).css({ 'text-decoration': "none" });
+		$( '#dunlop_selc' ).css({ 'text-decoration': "none" });
+		$( '#toyo_selc' ).css({ 'text-decoration': "none" });
+		$( '#maxxis_selc' ).css({ 'text-decoration': "none" });
+
+		$( '#momo' ).fadeOut( "fast" );
+		$( '#hrs_a' ).fadeOut( "fast" );
+		$( '#hrs_4' ).delay(200).fadeIn( "slow" );
+		$( '#ballis' ).fadeOut( "fast" );
+		$( '#dunlop' ).fadeOut( "fast" );
+		$( '#toyo' ).fadeOut( "fast" );
+		$( '#maxxis' ).fadeOut( "fast" );
+
+
+	});
+
+	$("#hrs1_selc_bus").click(function() {
+
+		$( '#momo_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#hrs_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#hrs1_selc_bus' ).css({ 'text-decoration': "underline" });
+		$( '#ballistic_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#dunlop_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#toyo_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#maxxis_selc_bus' ).css({ 'text-decoration': "none" });
+
+		$( '#momo_bus' ).fadeOut( "fast" );
+		$( '#hrs_a_bus' ).fadeOut( "fast" );
+		$( '#hrs_4_bus' ).delay(200).fadeIn( "slow" );
+		$( '#ballis_bus' ).fadeOut( "fast" );
+		$( '#dunlop_bus' ).fadeOut( "fast" );
+		$( '#toyo_bus' ).fadeOut( "fast" );
+		$( '#maxxis_bus' ).fadeOut( "fast" );
+
+
+	});
+
+
+	$("#ballistic_selc").click(function() {
+
+		$( '#momo_selc' ).css({ 'text-decoration': "none" });
+		$( '#hrs_selc' ).css({ 'text-decoration': "none" });
+		$( '#hrs1_selc' ).css({ 'text-decoration': "none" });
+		$( '#ballistic_selc' ).css({ 'text-decoration': "underline" });
+		$( '#dunlop_selc' ).css({ 'text-decoration': "none" });
+		$( '#toyo_selc' ).css({ 'text-decoration': "none" });
+		$( '#maxxis_selc' ).css({ 'text-decoration': "none" });;
+
+		$( '#momo' ).fadeOut( "fast" );
+		$( '#hrs_a' ).fadeOut( "fast" );
+		$( '#hrs_4' ).fadeOut( "fast" );
+		$( '#ballis' ).delay(200).fadeIn( "slow" );
+		$( '#dunlop_selc' ).css({ 'text-decoration': "none" });
+		$( '#dunlop' ).fadeOut( "fast" );
+		$( '#toyo' ).fadeOut( "fast" );
+		$( '#maxxis' ).fadeOut( "fast" );
+
+
+	});
+
+	$("#ballistic_selc_bus").click(function() {
+
+		$( '#momo_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#hrs_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#hrs1_sel_bus' ).css({ 'text-decoration': "none" });
+		$( '#ballistic_selc_bus' ).css({ 'text-decoration': "underline" });
+		$( '#dunlop_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#toyo_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#maxxis_selc_bus' ).css({ 'text-decoration': "none" });;
+
+		$( '#momo_bus' ).fadeOut( "fast" );
+		$( '#hrs_a_bus' ).fadeOut( "fast" );
+		$( '#hrs_4_bus' ).fadeOut( "fast" );
+		$( '#ballis_bus' ).delay(200).fadeIn( "slow" );
+		$( '#dunlop_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#dunlop_bus' ).fadeOut( "fast" );
+		$( '#toyo_bus' ).fadeOut( "fast" );
+		$( '#maxxis_bus' ).fadeOut( "fast" );
+
+
+	});
+
+	$("#hero_selc").click(function() {
+
+		$( '#hero_selc' ).css({ 'text-decoration': "underline" });
+		$( '#confor_selc' ).css({ 'text-decoration': "none" });
+		$( '#atturo_selc' ).css({ 'text-decoration': "none" });
+		$( '#dunlop_selc' ).css({ 'text-decoration': "none" });
+		$( '#sunny_selc' ).css({ 'text-decoration': "none" });
+		$( '#toyo_selc' ).css({ 'text-decoration': "none" });
+		$( '#maxxis_selc' ).css({ 'text-decoration': "none" });;
+
+		$( '#hero' ).delay(200).fadeIn( "slow" );
+		$( '#dunlop_selc' ).css({ 'text-decoration': "none" });
+		$( '#dunlop' ).fadeOut( "fast" );
+		$( '#confor' ).fadeOut( "fast" );
+		$( '#atturo' ).fadeOut( "fast" );
+		$( '#toyo' ).fadeOut( "fast" );
+		$( '#sunny' ).fadeOut( "fast" );
+		$( '#maxxis' ).fadeOut( "fast" );
+
+
+	});
+
+	$("#hero_selc_bus").click(function() {
+
+		$( '#hero_selc_bus' ).css({ 'text-decoration': "underline" });
+		$( '#confor_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#atturo_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#dunlop_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#sunny_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#toyo_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#maxxis_selc_bus' ).css({ 'text-decoration': "none" });;
+
+		$( '#hero_bus' ).delay(200).fadeIn( "slow" );
+		$( '#dunlop_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#dunlop_bus' ).fadeOut( "fast" );
+		$( '#confor_bus' ).fadeOut( "fast" );
+		$( '#atturo_bus' ).fadeOut( "fast" );
+		$( '#toyo_bus' ).fadeOut( "fast" );
+		$( '#sunny_bus' ).fadeOut( "fast" );
+		$( '#maxxis_bus' ).fadeOut( "fast" );
+
+
+	});
+
+
+	$("#confor_selc").click(function() {
+
+		$( '#hero_selc' ).css({ 'text-decoration': "none" });
+		$( '#confor_selc' ).css({ 'text-decoration': "underline" });
+		$( '#atturo_selc' ).css({ 'text-decoration': "none" });
+		$( '#sunny_selc' ).css({ 'text-decoration': "none" });
+		$( '#dunlop_selc' ).css({ 'text-decoration': "none" });
+		$( '#toyo_selc' ).css({ 'text-decoration': "none" });
+		$( '#maxxis_selc' ).css({ 'text-decoration': "none" });;
+
+		$( '#hero' ).fadeOut( "fast" );
+		$( '#confor' ).delay(200).fadeIn( "slow" );
+		$( '#dunlop_selc' ).css({ 'text-decoration': "none" });
+		$( '#dunlop' ).fadeOut( "fast" );
+		$( '#atturo' ).fadeOut( "fast" );
+		$( '#dunlop_selc' ).css({ 'text-decoration': "none" });
+		$( '#toyo' ).fadeOut( "fast" );
+		$( '#sunny' ).fadeOut( "fast" );
+		$( '#maxxis' ).fadeOut( "fast" );
+
+
+	});
+
+	$("#confor_selc_bus").click(function() {
+
+		$( '#hero_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#confor_selc_bus' ).css({ 'text-decoration': "underline" });
+		$( '#atturo_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#sunny_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#dunlop_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#toyo_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#maxxis_selc_bus' ).css({ 'text-decoration': "none" });;
+
+		$( '#hero_bus' ).fadeOut( "fast" );
+		$( '#confor_bus' ).delay(200).fadeIn( "slow" );
+		$( '#dunlop_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#dunlop_bus' ).fadeOut( "fast" );
+		$( '#atturo_bus' ).fadeOut( "fast" );
+		$( '#dunlop_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#toyo_bus' ).fadeOut( "fast" );
+		$( '#sunny_bus' ).fadeOut( "fast" );
+		$( '#maxxis_bus' ).fadeOut( "fast" );
+
+
+	});
+
+
+	$("#atturo_selc").click(function() {
+
+		$( '#hero_selc' ).css({ 'text-decoration': "none" });
+		$( '#confor_selc' ).css({ 'text-decoration': "none" });
+		$( '#atturo_selc' ).css({ 'text-decoration': "underline" });
+		$( '#dunlop_selc' ).css({ 'text-decoration': "none" });
+		$( '#toyo_selc' ).css({ 'text-decoration': "none" });
+		$( '#maxxis_selc' ).css({ 'text-decoration': "none" });;
+		$( '#sunny_selc' ).css({ 'text-decoration': "none" });
+
+		$( '#hero' ).fadeOut( "fast" );
+		$( '#confor' ).fadeOut( "fast" );
+		$( '#atturo' ).delay(200).fadeIn( "slow" );
+		$( '#dunlop_selc' ).css({ 'text-decoration': "none" });
+		$( '#dunlop' ).fadeOut( "fast" );
+		$( '#dunlop_selc' ).css({ 'text-decoration': "none" });
+		$( '#toyo' ).fadeOut( "fast" );
+		$( '#sunny' ).fadeOut( "fast" );
+		$( '#maxxis' ).fadeOut( "fast" );
+
+	});
+
+	$("#atturo_selc_bus").click(function() {
+
+		$( '#hero_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#confor_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#atturo_selc_bus' ).css({ 'text-decoration': "underline" });
+		$( '#dunlop_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#toyo_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#maxxis_selc_bus' ).css({ 'text-decoration': "none" });;
+		$( '#sunny_selc_bus' ).css({ 'text-decoration': "none" });
+
+		$( '#hero_bus' ).fadeOut( "fast" );
+		$( '#confor_bus' ).fadeOut( "fast" );
+		$( '#atturo_bus' ).delay(200).fadeIn( "slow" );
+		$( '#dunlop_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#dunlop_bus' ).fadeOut( "fast" );
+		$( '#dunlop_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#toyo_bus' ).fadeOut( "fast" );
+		$( '#sunny_bus' ).fadeOut( "fast" );
+		$( '#maxxis_bus' ).fadeOut( "fast" );
+
+	});
+
+
+	$("#sunny_selc").click(function() {
+
+		$( '#hero_selc' ).css({ 'text-decoration': "none" });
+		$( '#confor_selc' ).css({ 'text-decoration': "none" });
+		$( '#atturo_selc' ).css({ 'text-decoration': "none" });
+		$( '#dunlop_selc' ).css({ 'text-decoration': "none" });
+		$( '#toyo_selc' ).css({ 'text-decoration': "none" });
+		$( '#maxxis_selc' ).css({ 'text-decoration': "none" });;
+		$( '#sunny_selc' ).css({ 'text-decoration': "underline" });
+
+		$( '#hero' ).fadeOut( "fast" );
+		$( '#confor' ).fadeOut( "fast" );
+		$( '#atturo' ).fadeOut( "fast" );
+		$( '#dunlop' ).fadeOut( "fast" );
+		$( '#toyo' ).fadeOut( "fast" );
+		$( '#sunny' ).delay(200).fadeIn( "slow" );
+		$( '#maxxis' ).fadeOut( "fast" );
+
+	});
+
+	$("#sunny_selc_bus").click(function() {
+
+		$( '#hero_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#confor_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#atturo_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#dunlop_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#toyo_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#maxxis_selc_bus' ).css({ 'text-decoration': "none" });;
+		$( '#sunny_selc_bus' ).css({ 'text-decoration': "underline" });
+
+		$( '#hero_bus' ).fadeOut( "fast" );
+		$( '#confor_bus' ).fadeOut( "fast" );
+		$( '#atturo_bus' ).fadeOut( "fast" );
+		$( '#dunlop_bus' ).fadeOut( "fast" );
+		$( '#toyo_bus' ).fadeOut( "fast" );
+		$( '#sunny_bus' ).delay(200).fadeIn( "slow" );
+		$( '#maxxis_bus' ).fadeOut( "fast" );
+
+	});
+
+
+	$("#dunlop_selc").click(function() {
+
+		$( '#hero_selc' ).css({ 'text-decoration': "none" });
+		$( '#confor_selc' ).css({ 'text-decoration': "none" });
+		$( '#atturo_selc' ).css({ 'text-decoration': "none" });
+		$( '#sunny_selc' ).css({ 'text-decoration': "none" });
+		$( '#dunlop_selc' ).css({ 'text-decoration': "underline" });
+		$( '#toyo_selc' ).css({ 'text-decoration': "none" });
+		$( '#maxxis_selc' ).css({ 'text-decoration': "none" });;
+
+		$( '#hero' ).fadeOut( "fast" );
+		$( '#confor' ).fadeOut( "fast" );
+		$( '#atturo' ).fadeOut( "fast" );
+		$( '#sunny' ).fadeOut( "fast" );
+		$( '#toyo' ).fadeOut( "fast" );
+		$( '#dunlop' ).delay(200).fadeIn( "slow" );
+		$( '#maxxis' ).fadeOut( "fast" );
+
+	});
+
+	$("#dunlop_selc_bus").click(function() {
+
+		$( '#hero_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#confor_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#atturo_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#sunny_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#dunlop_selc_bus' ).css({ 'text-decoration': "underline" });
+		$( '#toyo_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#maxxis_selc_bus' ).css({ 'text-decoration': "none" });;
+
+		$( '#hero_bus' ).fadeOut( "fast" );
+		$( '#confor_bus' ).fadeOut( "fast" );
+		$( '#atturo_bus' ).fadeOut( "fast" );
+		$( '#sunny_bus' ).fadeOut( "fast" );
+		$( '#toyo_bus' ).fadeOut( "fast" );
+		$( '#dunlop_bus' ).delay(200).fadeIn( "slow" );
+		$( '#maxxis_bus' ).fadeOut( "fast" );
+
+	});
+
+
+	$("#toyo_selc").click(function() {
+
+		$( '#hero_selc' ).css({ 'text-decoration': "none" });
+		$( '#confor_selc' ).css({ 'text-decoration': "none" });
+		$( '#atturo_selc' ).css({ 'text-decoration': "none" });
+		$( '#sunny_selc' ).css({ 'text-decoration': "none" });
+		$( '#dunlop_selc' ).css({ 'text-decoration': "none" });
+		$( '#toyo_selc' ).css({ 'text-decoration': "underline" });
+		$( '#maxxis_selc' ).css({ 'text-decoration': "none" });;
+
+		$( '#hero' ).fadeOut( "fast" );
+		$( '#confor' ).fadeOut( "fast" );
+		$( '#atturo' ).fadeOut( "fast" );
+		$( '#sunny' ).fadeOut( "fast" );
+		$( '#dunlop' ).fadeOut( "fast" );
+		$( '#toyo' ).delay(200).fadeIn( "slow" );
+		$( '#maxxis' ).fadeOut( "fast" );
+
+	});
+
+	$("#toyo_selc_bus").click(function() {
+
+		$( '#hero_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#confor_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#atturo_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#sunny_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#dunlop_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#toyo_selc_bus' ).css({ 'text-decoration': "underline" });
+		$( '#maxxis_selc_bus' ).css({ 'text-decoration': "none" });;
+
+		$( '#hero_bus' ).fadeOut( "fast" );
+		$( '#confor_bus' ).fadeOut( "fast" );
+		$( '#atturo_bus' ).fadeOut( "fast" );
+		$( '#sunny_bus' ).fadeOut( "fast" );
+		$( '#dunlop_bus' ).fadeOut( "fast" );
+		$( '#toyo_bus' ).delay(200).fadeIn( "slow" );
+		$( '#maxxis_bus' ).fadeOut( "fast" );
+
+	});
+
+
+	$("#maxxis_selc").click(function() {
+
+		$( '#hero_selc' ).css({ 'text-decoration': "none" });
+		$( '#confor_selc' ).css({ 'text-decoration': "none" });
+		$( '#atturo_selc' ).css({ 'text-decoration': "none" });
+		$( '#sunny_selc' ).css({ 'text-decoration': "none" });
+		$( '#dunlop_selc' ).css({ 'text-decoration': "none" });
+		$( '#toyo_selc' ).css({ 'text-decoration': "none" });
+		$( '#maxxis_selc' ).css({ 'text-decoration': "underline" });;
+
+		$( '#hero' ).fadeOut( "fast" );
+		$( '#confor' ).fadeOut( "fast" );
+		$( '#atturo' ).fadeOut( "fast" );
+		$( '#sunny' ).fadeOut( "fast" );
+		$( '#dunlop' ).fadeOut( "fast" );
+		$( '#maxxis' ).delay(200).fadeIn( "slow" );
+		$( '#toyo' ).fadeOut( "fast" );
+
+
+	});
+
+	$("#maxxis_selc_bus").click(function() {
+
+		$( '#hero_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#confor_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#atturo_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#sunny_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#dunlop_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#toyo_selc_bus' ).css({ 'text-decoration': "none" });
+		$( '#maxxis_selc_bus' ).css({ 'text-decoration': "underline" });;
+
+		$( '#hero_bus' ).fadeOut( "fast" );
+		$( '#confor_bus' ).fadeOut( "fast" );
+		$( '#atturo_bus' ).fadeOut( "fast" );
+		$( '#sunny_bus' ).fadeOut( "fast" );
+		$( '#dunlop_bus' ).fadeOut( "fast" );
+		$( '#maxxis_bus' ).delay(200).fadeIn( "slow" );
+		$( '#toyo_bus' ).fadeOut( "fast" );
+
+
+	});
+
+
+ 	 $(window).scroll(function(){
+
+                 var height = $(window).scrollTop();
+
+           	if ($(window).width() < 650){
+
+           		if(height  > 100) {
+
+                     $('header #logo').animate({'margin-top': '5px'},100);
+                     $('header #logo a').css({'width': '215px', 'height': '78px'},100);
+                    
+                    
+
+                 }else{
+
+                     $('header #logo').animate({'margin-top': '5px'},100);
+                     $('header #logo a').css({'width': '215px', 'height': '78px'},100);
+                    
+
+                 }
+
+           	}else if ($(window).width() < 770) {
+
+           		if(height  > 100) {
+
+                     $('header #logo').animate({'margin-top': '5px'},100);
+                     $('header #logo a').css({'background': 'url(_include/img/logo.png) no-repeat'},100);
+                     $('header #logo a').css({'width': '215px', 'height': '78px'},100);
+                    
+
+                 }else{
+
+                     $('header #logo').animate({'margin-top': '5px'},100);
+                     $('header #logo a').css({'background': 'url(_include/img/logo.png) no-repeat'},100);
+                      $('header #logo a').css({'width': '215px', 'height': '78px'},100);
+                    
+
+                 }
+
+           	}else if ($(window).width() < 1030){
+
+           		 if(height  > 100) {
+
+                     $('header #logo').animate({'margin-top': '25px'},100);
+                     $('header #logo a').css({'background': 'url(_include/img/logo.png) no-repeat'},100);
+                     $('header #logo a').css({'width': '215px', 'height': '78px'},100);
+                    
+
+                 }else{
+
+                     $('header #logo').animate({'margin-top': '35px'},100);
+                     $('header #logo a').css({'background': 'url(_include/img/logo.png) no-repeat'},100);
+                     $('header #logo a').css({'width': '215px', 'height': '78px'},100);
+                    
+
+                 }
+
+           	}else{
+
+                 if(height  > 100) {
+
+                     $('header #logo').animate({'margin-top': '45px'},100);
+                     $('header #logo a').css({'background': 'url(_include/img/logo.png) no-repeat'},100);
+                     $('header #logo a').css({'width': '215px', 'height': '78px'},100);
+
+                     $('header').css({'-webkit-box-shadow': '0px 3px 5px -1px rgba(0,0,0,0.58)', '-moz-box-shadow': '0px 3px 5px -1px rgba(0,0,0,0.58)','box-shadow':'0px 3px 5px -1px rgba(0,0,0,0.58)'},100);
+                    
+
+                 }else{
+
+                     $('header #logo').animate({'margin-top': '75px'},100);
+                     $('header #logo a').css({'background': 'url(_include/img/logo.png) no-repeat'},100);
+                     $('header #logo a').css({'width': '215px', 'height': '78px'},100);
+                     $('header').css({'-webkit-box-shadow': '0px 0px 0px 0px rgba(0,0,0,0)', '-moz-box-shadow': '0px 0px 0px 0px rgba(0,0,0,0)','box-shadow':'0px 0px 0px 0px rgba(0,0,0,0)'},100);
+                    
+
+                 }
+
+            }
+
+              
+    });
+
+
+  });
+});

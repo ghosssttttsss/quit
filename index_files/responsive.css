@@ -1,0 +1,1372 @@
+@media (max-width: 1920px) {
+	
+
+}
+
+@media (max-width: 1366px) {
+
+	/* ==================================================
+	   Inicio
+	================================================== */
+
+	.page {
+
+		width: 100%;
+		height: 500px;
+	
+	}
+	.ventana{
+
+		width: 100%;
+		height: 360px;
+		margin-top: 10px;
+		overflow: hidden;
+
+	}
+
+	/* ==================================================
+	   Inicio
+	================================================== */
+
+	/* ==================================================
+	   Productos
+	================================================== */
+
+	.logo{
+
+		width: 350px;
+
+	}
+
+	.vista{
+
+		width: 870px;
+
+	}
+
+
+	.adelante{
+
+		right: 50px;
+
+	}
+
+	/* ==================================================
+	   Productos
+	================================================== */
+
+	
+
+}
+
+@media (max-width: 1024px) {
+
+
+	/* ==================================================
+	   Inicio
+	================================================== */
+
+	nav#menu {
+		
+	
+		margin-right: 290px;
+		
+	}
+
+	header #logo {
+	
+		margin-top: 35px;
+
+	}
+	.t_llantas_largo, .t_aros, .t_accesorios{
+		font-size: 25px;
+		width: auto;
+		margin: auto 50px;
+	}
+	.plakitos{
+
+		overflow: hidden;
+		width: 328px;
+
+	}
+
+	.f1 .texto_1{
+
+	
+		font-size: 26px;
+		line-height: 26px;
+		width: 327px;
+		
+	}
+
+	.logos_marcas{
+
+		
+		width: 220px;
+		
+
+	}
+
+	.logos_marcas img{
+
+		
+		width: 220px;
+		
+
+	}
+
+
+	.page_2 .carro_linea img{
+
+		width: 400px;
+
+	}
+
+	/* ==================================================
+	   Inicio
+	================================================== */
+
+	/* ==================================================
+	   Nosotros
+	================================================== */
+
+	.logo_com{
+
+		
+		margin-left: 195px;
+
+	}
+
+	.triangulo{
+
+	     margin-left: 198px;	
+
+	}
+
+	.n_page{
+
+		width: 988px;
+		padding-left: 36px;
+
+	}
+
+	.n_page .texto_2{
+
+	
+		width: 300px;
+		margin-left: 40px;
+	
+
+	}
+
+	/* ==================================================
+	   Nosotros
+	================================================== */
+
+	/* ==================================================
+	   Productos
+	================================================== */
+
+	.logo{
+
+		width: 120px;
+		margin-left: 20px;
+		margin-right: 20px;
+
+	}
+
+	.vista{
+
+		width: 800px;
+
+	}
+
+	.marcax{
+
+		margin-top: 40px;
+	
+	}
+
+	.adelante{
+
+		right: 30px;
+
+	}
+
+	#hero_delante, #hero_delante_bus{
+
+		display: inherit;
+
+	}
+
+	#hero_tras, #hero_tras_bus{
+
+		display: inherit;
+
+	}
+
+	#confor_delante, #confor_delante_bus{
+
+		display: inherit;
+
+	}
+
+	#confor_tras, #confor_tras_bus{
+
+		display: inherit;
+
+	}
+
+	#sunny_delante, #sunny_delante_bus{
+
+		display: inherit;
+
+	}
+
+	#sunny_tras, #sunny_tras_bus{
+
+		display: inherit;
+
+	}
+
+	#dunlop_delante, #dunlop_delante_bus{
+
+		display: inherit;
+
+	}
+
+	#dunlop_tras, #dunlop_tras_bus{
+
+		display: inherit;
+
+	}
+
+	.acc{
+
+		width: 334.6px;
+
+	}
+
+	/* ==================================================
+	   Productos
+	================================================== */
+
+	/* ==================================================
+	   Servicios
+	================================================== */
+
+	.s_page .texto_3{
+
+		
+		width: 230px;
+		margin-top: 250px;
+		margin-left: 80px
+	
+
+	}
+
+	/* ==================================================
+	   Servicios
+	================================================== */
+
+	/* ==================================================
+	   Contactos
+	================================================== */
+
+	.titulo_con{
+
+		margin-left: 5px;
+
+	}
+
+	.con_lado2{
+
+		width: 472px;
+		overflow: hidden;
+
+	}
+
+
+	.canvas{
+
+		width: 1024px;
+
+	}
+
+
+	.tri_2{
+
+		margin-left: 850px;
+
+	}
+
+	.info_2{
+
+		
+		width: 180px;
+
+	}
+
+	/* ==================================================
+	   Contactos
+	================================================== */
+
+	/* ==================================================
+	   Adicionales
+	================================================== */
+
+
+	.texto_cons{
+
+		width: 450px;
+		float: left;
+		text-align: justify;
+
+	}
+
+
+	.imagen_cons{
+
+		margin-right: 15px;
+
+
+	}
+
+
+	/* ==================================================
+	   Adicionales
+	================================================== */
+
+}
+
+
+@media (max-width: 768px) {
+
+	/* ==================================================
+	   Inicio
+	================================================== */
+
+	header #logo {
+	
+		margin-left: 35px;
+		margin-top: 5px;
+
+	}	
+
+	.f1{
+
+		
+		margin-left: 45px;
+		
+		
+	}
+
+	.f3{
+
+		float: none;
+		margin: 20px auto;
+
+	}
+
+	.t_llantas_largo, .t_aros, .t_accesorios{
+		font-size: 25px;
+		width: auto;
+		margin: auto 20px;
+	}
+
+	.franco{
+
+		display: inherit;
+
+	}
+
+	.logos_marcas{
+
+		
+		width: 135px;
+		
+
+	}
+
+	.logos_marcas img{
+
+		
+		width: 135px;
+		
+
+	}
+
+	.page_2 p{
+
+		width: 370px;
+		
+	}
+
+	.page_2 .ta_1{
+
+		font-size: 76px;
+		line-height: 66px;
+
+	}
+
+	.page_2 .ta_2{
+
+		font-size: 42px;
+		line-height: 42px;
+
+	}
+
+	.page_2 .ta_3{
+
+		font-size: 49px;
+		line-height: 39px;
+
+	}
+
+	.page_2 .ta_4{
+
+		font-size: 100px;
+		line-height: 80px;
+
+	}
+
+	.page_2 .ta_5{
+
+		font-size: 47px;
+		line-height: 47px;
+
+	}
+
+	.page_2 .carro_linea img{
+
+		width: 310px;
+
+	}
+
+	.page_3{
+
+		width: 100%;
+
+	}
+
+	.ivan{
+
+		display: none;
+
+	}
+
+	.exp_cent{
+
+		float: left;
+		margin-top: 40px;
+
+	}
+
+	nav#menu {
+		
+	
+		margin-right: 540px;
+		
+	}
+
+	/* ==================================================
+	   Inicio
+	================================================== */
+
+	/* ==================================================
+	   Nosotros
+	================================================== */
+
+
+	.n_page{
+
+		width: 732px;
+
+	}
+
+	.n_page .texto_1{
+
+		
+		
+		float: none;
+	
+
+	}
+
+	.n_page .texto_2{
+
+		
+		width: 500px;
+		margin: 60px auto;
+		float: none;
+	
+
+	}
+
+	/* ==================================================
+	   Nosotros
+	================================================== */
+
+
+	/* ==================================================
+	   Productos
+	================================================== */
+
+	.logo{
+
+		width: 400px;
+		margin: 20px auto;
+		float: none;
+
+	}
+
+	.logo img {
+
+	    margin-top: 10px;
+
+	}
+
+	.vista{
+
+		width: 90%;
+		float: none;
+		margin: 0 auto; 
+
+	}
+
+	.marcax{
+
+		margin-top: 0px;
+	
+	}
+
+	.prod{
+
+		margin-left: 600px;
+
+	}
+
+	.acc {
+
+	    width: 248.9px;
+	    height: auto;
+	    line-height: auto;
+	}
+
+	/* ==================================================
+	   Productos
+	================================================== */
+
+	/* ==================================================
+	   Servicios
+	================================================== */
+
+	.s_page .texto_1{
+
+		float: none;
+
+	}
+
+	.s_page .texto_3{
+
+		float: none;
+		width: 500px;
+		margin: 40px auto;
+	
+
+	}
+
+	.ipad_serv{
+
+		display: block;
+
+	}
+
+	/* ==================================================
+	   Servicios
+	================================================== */
+
+	/* ==================================================
+	   Contactos
+	================================================== */
+
+	.titulo_con{
+
+		margin-left: 5px;
+
+	}
+
+	.con_lado1{
+
+		width: 100%;
+		float: none;
+		padding-top: 1px;
+		
+
+	}
+
+	.con_lado2{
+
+		width: 100%;
+		float: none;
+		
+
+	}
+
+	.con_lado2 img{
+
+		width: 100%;
+		
+
+	}
+
+	.ver{
+
+		display: none;
+
+	}
+
+	.nover{
+
+		display: inherit;
+
+	}
+
+	.canvas{
+
+		width: 100%;
+
+	}
+
+	.tri_1{
+
+		margin-left: 330px;
+
+	}
+
+
+	.tri_2{
+
+		margin-left: 330px;
+		margin-top: 19px;
+
+	}
+
+
+	.tri_3{
+
+		margin-left: 330px;
+		margin-top: 19px;
+
+	}
+
+	.page_con .con_lado1{
+
+		
+		float: left;
+
+	}
+
+	.page_con .con_lado2{
+
+		width: 200px;
+		float: left;
+
+
+	}
+
+	.info_1{
+
+		margin-left: 5px;
+
+	}
+
+	.info_2{
+
+		margin-left: 5px;
+
+	}
+
+	/* ==================================================
+	   Contactos
+	================================================== */
+
+	/* ==================================================
+	   Adicionales
+	================================================== */
+
+
+	.texto_cons{
+
+		width: 250px;
+	
+
+	}
+
+
+	.imagen_cons{
+
+		margin-right: 15px;
+
+
+	}
+
+	.texto_cons .titulo h1{
+
+		text-align: left;
+		font-size: 30px;
+
+	}
+
+
+	/* ==================================================
+	   Adicionales
+	================================================== */
+
+	
+
+
+}
+
+@media (max-width: 650px) {
+
+	/* ==================================================
+	   Inicio
+	================================================== */
+
+	header{
+
+		background: #fff;
+
+	}
+
+	header .sticky-nav {
+		position: relative;	
+	}
+	
+	#menu {
+		display: none;	
+	}
+	
+	#mobile-nav {
+    	display: block;
+		float: left;
+		margin-left: 100px;
+		margin-top: 40px;
+
+
+	}
+
+	.aquiles{
+
+		display: inherit;
+
+	}
+
+	.icono{
+
+		float: left;
+		margin-left: 20px; 
+
+	}
+
+	.floteo{
+
+		float: left;
+		margin-left: 10px; 
+
+	}
+	
+	#menu-nav-mobile {
+		margin-bottom: 0;
+		margin-left: 0;
+		padding: 0;
+	}
+	
+	#navigation-mobile li a {
+
+		text-align: center;
+		margin: 0 auto;
+		height: 45px;
+		font-size: 14px;
+		padding-top: 12px;
+		background: #000;
+		color: #fff;
+
+	}
+	
+	header .sticky-nav.stuck #mobile-nav {
+		margin-right: 20px;	
+	}
+
+	header #logo{
+
+		width: 115px;
+		height: 110px;
+
+	}
+
+	header #logo a{
+
+		background: url(../img/logo_min.png) no-repeat;
+
+	}
+
+	.f1{
+
+		float: none;
+		margin: 20px auto;
+		
+		
+	}
+
+	.f2{
+
+		float: none;
+		margin: 20px auto;
+
+	}
+	.f2HomeImg{
+		background-image: url("../img/promociones-descuentos-de-llantas-baratas-en-surtillantas.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 155px;
+	}
+
+	.f3{
+
+		float: none;
+		margin: 20px auto;
+
+	}
+
+	.logos_marcas{
+
+		float: none;
+		width: 280px;
+		height: 90px;
+		margin: 40px auto;
+
+	}
+
+	.logos_marcas img{
+
+		
+		width: 280px;
+		
+
+	}
+
+	.page_1{
+
+		height: auto;
+		padding-bottom: 10px;
+
+	}
+
+	.page_2 p{
+
+		width: 335px;
+		color: #000;
+		margin-top: 10px;
+		margin-left: 10px;
+		float: none;
+
+	}
+
+	.page_2{
+
+		height: auto;
+		padding-bottom: 20px;
+
+	}
+
+	.page_2 .carro_linea{
+
+		margin-top: 40px;
+		
+
+	}
+
+	.logo_dis{
+
+		float: none;
+		width: 250px;
+		height: 50px;
+		margin: 40px auto;
+
+	}
+
+	.ventana {
+	    width: 100%;
+	    height: 196px;
+	    margin-top: 20px;
+	    overflow: hidden;
+	}
+
+	.page_2 .ta_5{
+
+		font-size: 37px;
+		line-height: 37px;
+
+	}
+
+	.page{
+
+		height: auto;;
+
+	}
+
+	.llantas img {
+
+	    width: 350px;
+
+	}
+
+	#l2{
+
+		margin-top: -196px;
+
+	}
+
+	#l3{
+
+		margin-top: -196px;
+
+	}
+
+	#l4{
+
+		margin-top: -196px;
+
+	}
+
+	/* ==================================================
+	   Inicio
+	================================================== */
+
+	/* ==================================================
+	   Nosotros
+	================================================== */
+
+
+	.n_page{
+
+		width: 100%;
+		padding-left: 0px;
+
+	}
+
+	.n_page .texto_1{
+
+		
+		width: 90%;
+		margin: 0 auto;
+		float: none;
+	
+
+	}
+
+	.n_page .texto_2{
+
+		
+		width: 90%;
+		margin: 60px auto;
+		float: none;
+	
+
+	}
+
+	.n_page .ta_1{
+
+		font-size: 45px;
+		line-height: 45px;
+
+	}
+
+	.n_page .ta_2{
+
+		font-size: 48px;
+		line-height: 38px;
+
+	}
+
+	.n_page .ta_3{
+
+		font-size: 34px;
+		line-height: 34px;
+
+	}
+
+	.n_page .ta_4{
+
+		font-size: 55px;
+		line-height: 46px;
+
+	}
+
+	.n_page .ta_5{
+
+		font-size: 55px;
+		line-height: 46px;
+
+	}
+
+	.n_page .ta_6{
+
+		font-size: 37px;
+		line-height: 67px;
+
+	}
+
+	.n_page .ta_7{
+
+		font-size: 37px;
+		line-height: 17px;
+
+	}
+
+	.logo_com{
+
+		display: none;
+
+	}
+
+	/* ==================================================
+	   Nosotros
+	================================================== */
+
+	/* ==================================================
+	   Productos
+	================================================== */
+
+	.titulo_pro {
+
+	    
+	    height: 32px;
+	    font-size: 45px;
+	    margin-left: 5px;
+	    margin-bottom: -8px;
+	}
+
+	.logo{
+
+		width: 100%;
+
+	}
+
+	.vista{
+
+		width: 80%;
+		float: none;
+		margin: 0 auto; 
+
+	}
+
+	#prod{
+
+		margin-left: 200px;
+
+	}
+
+	.subdi {
+
+	    width: 150px;
+	
+	}
+
+	.acc {
+		
+	    width: 90%;
+	    height: auto;
+	    line-height: auto;
+	    margin: 10px auto;
+	    float: none;
+
+	}
+
+	.nota {
+	    width: 90%;
+	    font-size: 14px;
+	    margin: 50px auto;
+	}
+
+	.atturo_clean{
+
+		display: inherit;
+
+	}
+
+	/* ==================================================
+	   Productos
+	================================================== */
+
+	/* ==================================================
+	   Servicios
+	================================================== */
+
+
+	.triangulo1{
+
+	     margin-left: 260px;
+	     border-left: 115px solid #fff;
+	     border-top: 0px solid transparent;
+	     border-bottom: 65px solid transparent;	
+
+	}
+
+
+	.titulo_sec{
+
+		margin-left: 10px;
+
+	}
+
+	.s_page .texto_3{
+
+		width: 90%;
+
+	}
+
+	/* ==================================================
+	   Servicios
+	================================================== */
+
+	/* ==================================================
+	   Contactos
+	================================================== */
+
+	.titulo_con{
+
+		margin-left: 5px;
+		font-size: 36px;
+		margin-bottom: -20px;
+
+	}
+
+	.tri_1{
+
+		margin-left: 250px;
+
+	}
+
+
+	.tri_2{
+
+		margin-left: 250px;
+
+	}
+
+
+	.tri_3{
+
+		margin-left: 250px;
+
+	}
+
+	.con_lado1 .titulo{
+
+		width: 90%;
+		margin: 95px auto;
+		margin-bottom: 5px;
+		font-size: 40px;
+
+	}
+
+	.con_lado1 .tag{
+
+		width: 90%;
+		margin: 0px auto;
+
+	}
+
+	.map{
+
+		width: 100%;
+		margin-top: 5px;
+		margin-left: 0px;
+
+
+	}
+
+	.escrib{
+
+		margin-left: 20px;
+		font-size: 41px;
+		
+
+	}
+
+	form{
+
+		width: 90%;
+		margin: 0px auto;
+
+	}
+
+	.campo textarea, input{
+
+		width: 90%;
+
+	}
+
+	.page_con .con_lado1{
+
+		width: 100%;
+		float: none;
+
+	}
+
+	.page_con .con_lado2{
+
+		width: 100%;
+		float: none;
+
+
+	}
+
+	.info_1{
+
+		width: 180px;
+		margin: 0px auto;
+		text-align: center;
+
+	}
+
+	.info_2{
+
+		
+		margin: 5px auto;
+		border-bottom: 0px;
+		text-align: center;
+		margin-bottom: 10px;
+
+	}
+
+
+
+	/* ==================================================
+	   Contactos
+	================================================== */
+
+	/* ==================================================
+	   Adicional
+	================================================== */
+
+	.a_page .ta_1{
+
+		font-size: 33px;
+		line-height: 33px;
+		margin-left: 18px;
+
+	}
+
+	.a_page .ta_2{
+
+		font-size: 23px;
+		line-height: 23px;
+		margin-left: 18px;
+
+	}
+
+	.a_page .ta_3{
+
+		font-size: 23px;
+		line-height: 23px;
+		margin-left: 18px;
+
+	}
+
+	.a_page .ta_4{
+
+		font-size: 47px;
+		line-height: 47px;
+		margin-left: 18px;
+
+	}
+
+	.a_page .ta_5{
+
+		font-size: 23px;
+		line-height: 23px;
+		margin-left: 18px;
+
+	}
+
+	.a_page .texto_1{
+
+		width: 100%;
+
+	}
+
+	.texto_cons{
+
+		width: 90%;
+		float: none;
+		margin: 20px auto;
+
+	}
+
+	.imagen_cons{
+
+		width: 90%;
+		float: none;
+		margin: 20px auto;
+
+
+	}
+
+	/* ==================================================
+	   Adicional
+	================================================== */
+
+	
+}
+
+@media (max-width: 380px) {
+
+	/* ==================================================
+	   Servicios
+	================================================== */
+
+	.triangulo1{
+
+	     margin-left: 260px;
+	     border-left: 100px solid #fff;
+	     border-top: 0px solid transparent;
+	     border-bottom: 65px solid transparent;	
+
+	}
+
+	.page_ser .texto{
+
+		width: 80%;
+
+	}
+
+	/* ==================================================
+	   Servicios
+	================================================== */
+	
+}
+
+
+@media (max-width: 320px) {
+
+	/* ==================================================
+	   Servicios
+	================================================== */
+
+	#mobile-nav {
+	  
+	    margin-left: 50px;
+	   
+	}
+
+	/* ==================================================
+	   Servicios
+	================================================== */
+	
+}
+
+

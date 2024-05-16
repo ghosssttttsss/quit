@@ -1,0 +1,2562 @@
+@font-face {
+
+	font-family: SPL;
+	src: url('../fonts/splekta.eot');
+	src: url('../fonts/splekta.eot?iefix') format('embedded-opentype');
+	src: url("../fonts/splekta.ttf"),
+		url("../fonts/splekta.woff"),
+		url("../fonts/splekta.otf");
+
+}
+
+@font-face {
+
+	font-family: LIN;
+	src: url('../fonts/Lintel-Regular.eot');
+	src: url('../fonts/Lintel-Regular.eot?iefix') format('embedded-opentype');
+	src: url("../fonts/Lintel-Regular.ttf"),
+		url("../fonts/Lintel-Regular.woff"),
+		url("../fonts/Lintel-Regular.otf");
+
+}
+
+@font-face {
+
+	font-family: BEB;
+	src: url('../fonts/Bebas.eot');
+	src: url('../fonts/Bebas.eot?iefix') format('embedded-opentype');
+	src: url("../fonts/Bebas.ttf"),
+		url("../fonts/Bebas.woff"),
+		url("../fonts/Bebas.otf");
+
+}
+
+html,
+body {
+
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+}
+
+a:hover {
+
+	text-decoration: none;
+
+}
+
+.redes {
+
+	width: 33px;
+	height: 120px;
+	position: fixed;
+	right: 0;
+	margin-top: 390px;
+	z-index: 4000000;
+
+}
+
+.red {
+
+	width: 33px;
+	height: 54px;
+	margin-top: -15px;
+
+}
+
+
+.wht {
+
+	width: 115px;
+	height: 32.5px;
+	font-family: "LIN";
+	font-size: 16px;
+	font-weight: normal;
+	background: #afafaf;
+	color: #fff;
+	position: fixed;
+	right: 32px;
+	margin-top: 510px;
+	z-index: 40000000;
+	line-height: 33px;
+	padding-left: 5px;
+	padding-right: 5px;
+	display: none;
+
+}
+
+
+header {
+	position: fixed;
+	width: 100%;
+	height: auto;
+	background: #fff;
+	z-index: 95;
+
+
+}
+
+header .sticky-nav {
+	position: relative;
+	width: 100%;
+	z-index: 96;
+
+}
+
+header #logo1 {
+	color: #FFFFFF;
+	float: left;
+	margin-left: 40px;
+	margin-top: 15px;
+
+
+}
+
+
+
+header #logo {
+	color: #FFFFFF;
+	float: left;
+	margin-left: 40px;
+	margin-top: 75px;
+
+
+}
+
+header #logo a {
+	background: url(../img/surtillantas-importadora-de-llantas-y-aros.png) no-repeat;
+	width: 215px;
+	height: 78px;
+	vertical-align: middle;
+	text-indent: -9999px;
+	display: block;
+	opacity: 1;
+	filter: alpha(opacity=100);
+
+	-webkit-transition: opacity 0.25s ease-in-out 0s;
+	-moz-transition: opacity 0.25s ease-in-out 0s;
+	-o-transition: opacity 0.25s ease-in-out 0s;
+	transition: opacity 0.25s ease-in-out 0s;
+
+	-webkit-animation: circle 5s infinite forwards;
+	-moz-animation: circle 5s infinite forwards;
+	-ms-animation: circle 5s infinite forwards;
+	animation: circle 5s infinite forwards;
+}
+
+
+
+
+header #logo1 a {
+
+	background: url(../img/surtillantas-importadora-de-llantas-y-aros.png) no-repeat;
+	width: 163px;
+	height: 59px;
+	vertical-align: middle;
+	text-indent: -9999px;
+	display: block;
+	opacity: 1;
+
+}
+
+header #logo a:hover {
+	opacity: 0.65;
+	filter: alpha(opacity=65);
+}
+
+nav#menu {
+	float: right;
+	width: 590px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-right: 20px;
+	background: #000;
+	height: auto;
+}
+
+nav#menu #menu-nav {
+	margin: 0;
+	padding: 0;
+}
+
+nav#menu #menu-nav li {
+	list-style: none;
+	display: inline-block;
+}
+
+nav#menu #menu-nav li:first-child {
+	margin-left: 0;
+}
+
+nav#menu #menu-nav li a {
+	color: #fff;
+	width: 90px;
+	font-size: 15.38px;
+	font-weight: 300;
+	margin-top: 5px;
+	display: block;
+	font-family: "LIN";
+	text-align: center;
+}
+
+
+
+li.icono:hover {
+
+	width: 200px;
+	background: #fff;
+
+}
+
+nav#menu #menu-nav li.current {
+	text-decoration: underline;
+}
+
+
+/* ==================================================
+   Mobile Navigation
+================================================== */
+
+#mobile-nav {
+	display: none;
+}
+
+.menu-nav {
+	background: url(../img/menu-mobile_@2x.png) 0 0 no-repeat;
+	width: 32px;
+	height: 32px;
+	display: block;
+	margin: 22px 0 0 0;
+
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+
+	-webkit-transition: -webkit-transform 250ms ease-out 0s;
+	-moz-transition: -moz-transform 250ms ease-out 0s;
+	-o-transition: -o-transform 250ms ease-out 0s;
+	transition: transform 250ms ease-out 0s;
+}
+
+.menu-nav.open {
+	background-position: 0 -32px;
+
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	-o-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+
+	-webkit-transition: -webkit-transform 250ms ease-out 0s;
+	-moz-transition: -moz-transform 250ms ease-out 0s;
+	-o-transition: -o-transform 250ms ease-out 0s;
+	transition: transform 250ms ease-out 0s;
+}
+
+#navigation-mobile {
+	display: none;
+	width: 100%;
+	background: #fff;
+	border-bottom: 1px solid #fff;
+	position: absolute;
+	z-index: 9999;
+	margin-top: 74px;
+
+}
+
+#navigation-mobile li {
+	list-style: none;
+	border-top: 1px solid #2F3238;
+	font-family: "LIN";
+}
+
+#navigation-mobile li a {
+	display: block;
+	font-size: 16px;
+	padding: 20px 0;
+	color: #000;
+	font-weight: 300;
+}
+
+
+#navigation-mobile li a:hover {
+	opacity: 0.7;
+}
+
+#navigation-mobile li.current a span {
+
+	text-decoration: underline;
+
+}
+
+/* ==================================================
+   Section Page
+================================================== */
+
+.page {
+
+	width: 100%;
+	background: rgba(255, 255, 255, 1);
+	background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(242, 242, 242, 1)));
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 100%);
+	background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 100%);
+	background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 100%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(242, 242, 242, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f2f2f2', GradientType=0);
+	position: relative;
+	z-index: 94;
+}
+
+
+.page_1 {
+
+	width: 100%;
+	height: 248px;
+	background: #EE2E24;
+	margin-top: 20px;
+	padding-top: 20px;
+
+}
+
+.page_2 {
+
+	width: 100%;
+	height: 490px;
+	background: #FFDD00;
+	margin-top: 20px;
+	padding-top: 20px;
+
+}
+
+.page_3 {
+
+	width: 1000px;
+	margin: 0 auto;
+	background: transparent;
+	margin-top: 20px;
+	padding-top: 20px;
+
+}
+
+.n_page {
+
+	width: 1244px;
+	background: #EE2E24;
+	margin-top: 20px;
+	padding-top: 72px;
+	padding-bottom: 39px;
+	padding-left: 56px;
+	color: #fff;
+	font-weight: normal;
+
+}
+
+.s_page {
+
+	background: #FEC018;
+
+}
+
+
+.a_page {
+
+	width: 100%;
+	background: #07A684;
+	margin-top: 20px;
+	color: #fff;
+	font-weight: normal;
+	font-family: "SPL";
+	padding-top: 97px;
+	padding-bottom: 59px;
+
+}
+
+.footer {
+
+	width: 100%;
+	height: 78px;
+	background: #000;
+	margin-top: 30px;
+
+}
+
+/* ==================================================
+   Back to Top
+================================================== */
+
+/* ==================================================
+   Preloader
+================================================== */
+
+#jpreOverlay,
+#jSplash {
+	background-color: #fff;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 500000002;
+}
+
+#jpreSlide {
+	position: absolute;
+	top: 50% !important;
+	left: 50% !important;
+	margin: -73px 0 0 -73px;
+	width: 146px;
+	height: 146px;
+}
+
+#jpreLoader {
+	position: relative !important;
+	width: 100% !important;
+	height: 100% !important;
+	top: 0 !important;
+}
+
+#jprePercentage {
+	width: 50px;
+	height: 50px !important;
+	line-height: 50px;
+	position: absolute !important;
+	text-align: center;
+	left: 50%;
+	top: 50%;
+	margin: 70px 0 0 -25px;
+	z-index: 800;
+	font-family: "SPL";
+	font-size: 24px;
+	color: #000;
+
+}
+
+#cssload-wrapper {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 15;
+	overflow: hidden;
+}
+
+.cssload-loader {
+	width: 146px;
+	height: 146px;
+	border: 1px rgb(0, 0, 0) solid;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -73px 0 0 -73px;
+	border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+.cssload-loader .cssload-loading {
+	font-size: 10px;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	line-height: 14px;
+	font-family: 'Century Gothic', sans-serif;
+	font-style: italic;
+	left: 0;
+	top: 50%;
+	margin-top: 19px;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	text-transform: uppercase;
+	-o-text-transform: uppercase;
+	-ms-text-transform: uppercase;
+	-webkit-text-transform: uppercase;
+	-moz-text-transform: uppercase;
+}
+
+.cssload-loader-circle-1 {
+	width: 135px;
+	height: 135px;
+	left: 5px;
+	top: 5px;
+	border: 1px rgb(0, 0, 0) solid;
+	position: absolute;
+	border-right-color: transparent;
+	border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	animation: spin 3.45s linear infinite;
+	-o-animation: spin 3.45s linear infinite;
+	-ms-animation: spin 3.45s linear infinite;
+	-webkit-animation: spin 3.45s linear infinite;
+	-moz-animation: spin 3.45s linear infinite;
+}
+
+.cssload-loader-circle-2 {
+	width: 123px;
+	height: 123px;
+	left: 5px;
+	top: 5px;
+	border: 1px transparent solid;
+	position: absolute;
+	border-right-color: rgb(232, 21, 18);
+	border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	animation: spin 5.75s linear infinite;
+	-o-animation: spin 5.75s linear infinite;
+	-ms-animation: spin 5.75s linear infinite;
+	-webkit-animation: spin 5.75s linear infinite;
+	-moz-animation: spin 5.75s linear infinite;
+}
+
+.cssload-loader .cssload-line {
+	width: 10px;
+	height: 2px;
+	background: rgb(0, 0, 0);
+	position: absolute;
+}
+
+.cssload-loader .cssload-line:nth-child(1) {
+	left: 16px;
+	top: 50%;
+	margin-top: -1px;
+}
+
+.cssload-loader .cssload-line:nth-child(2) {
+	transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	left: 32px;
+	top: 32px;
+}
+
+.cssload-loader .cssload-line:nth-child(3) {
+	top: 16px;
+	left: 50%;
+	width: 2px;
+	height: 10px;
+}
+
+.cssload-loader .cssload-line:nth-child(4) {
+	transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	right: 32px;
+	top: 32px;
+}
+
+.cssload-loader .cssload-line:nth-child(5) {
+	right: 16px;
+	top: 50%;
+	margin-top: -1px;
+}
+
+.cssload-loader .cssload-line:nth-child(6) {
+	transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	right: 32px;
+	bottom: 32px;
+	background: rgb(232, 21, 18);
+}
+
+.cssload-loader .cssload-subline {
+	position: absolute;
+	width: 3px;
+	height: 2px;
+	background: rgb(0, 0, 0);
+}
+
+.cssload-loader .cssload-subline:nth-child(7) {
+	transform: rotate(22.5deg);
+	-o-transform: rotate(22.5deg);
+	-ms-transform: rotate(22.5deg);
+	-webkit-transform: rotate(22.5deg);
+	-moz-transform: rotate(22.5deg);
+	left: 20px;
+	top: 49px;
+}
+
+.cssload-loader .cssload-subline:nth-child(8) {
+	transform: rotate(67.5deg);
+	-o-transform: rotate(67.5deg);
+	-ms-transform: rotate(67.5deg);
+	-webkit-transform: rotate(67.5deg);
+	-moz-transform: rotate(67.5deg);
+	left: 49px;
+	top: 20px;
+}
+
+.cssload-loader .cssload-subline:nth-child(9) {
+	transform: rotate(112.5deg);
+	-o-transform: rotate(112.5deg);
+	-ms-transform: rotate(112.5deg);
+	-webkit-transform: rotate(112.5deg);
+	-moz-transform: rotate(112.5deg);
+	right: 49px;
+	top: 20px;
+}
+
+.cssload-loader .cssload-subline:nth-child(10) {
+	transform: rotate(157.5deg);
+	-o-transform: rotate(157.5deg);
+	-ms-transform: rotate(157.5deg);
+	-webkit-transform: rotate(157.5deg);
+	-moz-transform: rotate(157.5deg);
+	right: 20px;
+	top: 49px;
+}
+
+.cssload-loader .cssload-subline:nth-child(11) {
+	transform: rotate(22.5deg);
+	-o-transform: rotate(22.5deg);
+	-ms-transform: rotate(22.5deg);
+	-webkit-transform: rotate(22.5deg);
+	-moz-transform: rotate(22.5deg);
+	right: 19px;
+	bottom: 48px;
+	background: rgb(232, 21, 18);
+}
+
+.cssload-loader .cssload-needle {
+	width: 14px;
+	height: 14px;
+	border: 1px rgb(0, 0, 0) solid;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -8px 0 0 -8px;
+	z-index: 1;
+	border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	animation: pegIt 3.45s infinite ease-in-out;
+	-o-animation: pegIt 3.45s infinite ease-in-out;
+	-ms-animation: pegIt 3.45s infinite ease-in-out;
+	-webkit-animation: pegIt 3.45s infinite ease-in-out;
+	-moz-animation: pegIt 3.45s infinite ease-in-out;
+}
+
+.cssload-loader .cssload-needle:before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 3.5px 49px 3.5px 0;
+	border-color: transparent rgb(232, 21, 18) transparent transparent;
+	position: absolute;
+	right: 50%;
+	top: 50%;
+	margin: -3.5px 0 0 0;
+	border-radius: 0 50% 50% 0;
+	-o-border-radius: 0 50% 50% 0;
+	-ms-border-radius: 0 50% 50% 0;
+	-webkit-border-radius: 0 50% 50% 0;
+	-moz-border-radius: 0 50% 50% 0;
+}
+
+
+
+
+
+@keyframes pegIt {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	16% {
+		transform: rotate(75deg);
+	}
+
+	25% {
+		transform: rotate(55deg);
+	}
+
+	30% {
+		transform: rotate(90deg);
+	}
+
+	36% {
+		transform: rotate(170deg);
+	}
+
+	42% {
+		transform: rotate(150deg);
+	}
+
+	50% {
+		transform: rotate(227deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@-o-keyframes pegIt {
+	0% {
+		-o-transform: rotate(0deg);
+	}
+
+	16% {
+		-o-transform: rotate(75deg);
+	}
+
+	25% {
+		-o-transform: rotate(55deg);
+	}
+
+	30% {
+		-o-transform: rotate(90deg);
+	}
+
+	36% {
+		-o-transform: rotate(170deg);
+	}
+
+	42% {
+		transform: rotate(150deg);
+	}
+
+	50% {
+		-o-transform: rotate(227deg);
+	}
+
+	100% {
+		-o-transform: rotate(0deg);
+	}
+}
+
+@-ms-keyframes pegIt {
+	0% {
+		-ms-transform: rotate(0deg);
+	}
+
+	16% {
+		-ms-transform: rotate(75deg);
+	}
+
+	25% {
+		-ms-transform: rotate(55deg);
+	}
+
+	30% {
+		-ms-transform: rotate(90deg);
+	}
+
+	36% {
+		-ms-transform: rotate(170deg);
+	}
+
+	42% {
+		transform: rotate(150deg);
+	}
+
+	50% {
+		-ms-transform: rotate(227deg);
+	}
+
+	100% {
+		-ms-transform: rotate(0deg);
+	}
+}
+
+@-webkit-keyframes pegIt {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+
+	16% {
+		-webkit-transform: rotate(75deg);
+	}
+
+	25% {
+		-webkit-transform: rotate(55deg);
+	}
+
+	30% {
+		-webkit-transform: rotate(90deg);
+	}
+
+	36% {
+		-webkit-transform: rotate(170deg);
+	}
+
+	42% {
+		transform: rotate(150deg);
+	}
+
+	50% {
+		-webkit-transform: rotate(227deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(0deg);
+	}
+}
+
+@-moz-keyframes pegIt {
+	0% {
+		-moz-transform: rotate(0deg);
+	}
+
+	16% {
+		-moz-transform: rotate(75deg);
+	}
+
+	25% {
+		-moz-transform: rotate(55deg);
+	}
+
+	30% {
+		-moz-transform: rotate(90deg);
+	}
+
+	36% {
+		-moz-transform: rotate(170deg);
+	}
+
+	42% {
+		transform: rotate(150deg);
+	}
+
+	50% {
+		-moz-transform: rotate(227deg);
+	}
+
+	100% {
+		-moz-transform: rotate(0deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-o-keyframes spin {
+	0% {
+		-o-transform: rotate(0deg);
+	}
+
+	100% {
+		-o-transform: rotate(360deg);
+	}
+}
+
+@-ms-keyframes spin {
+	0% {
+		-ms-transform: rotate(0deg);
+	}
+
+	100% {
+		-ms-transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes spin {
+	0% {
+		-moz-transform: rotate(0deg);
+	}
+
+	100% {
+		-moz-transform: rotate(360deg);
+	}
+}
+
+
+/* ==================================================
+	WEB
+================================================== */
+
+
+
+/* ==================================================
+	Inicio
+================================================== */
+
+#supersized {
+
+	display: none;
+
+}
+
+.clean {
+
+	clear: both;
+
+}
+
+.icono {
+
+	width: 27px;
+	margin: 0 auto 5px;
+
+}
+
+.margen {
+
+	height: 100px;
+
+}
+
+.centrado {
+
+	width: 1300px;
+	height: 100%;
+	margin: 0px auto;
+
+}
+
+.copy {
+
+	width: 100%;
+	position: relative;
+	bottom: 0px;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 78px;
+	font-size: 12px;
+	color: #fff;
+	font-family: "LIN";
+
+}
+
+.copy a {
+
+	text-decoration: none;
+	color: #fff;
+	font-family: "LIN";
+	cursor: pointer;
+
+}
+
+
+.page .texto h1 {
+
+	width: 100%;
+	text-align: center;
+	font-family: "SPL";
+	font-size: 65px;
+	margin-top: 20px;
+	color: #231F20;
+
+}
+
+.page .texto h3 {
+
+	width: 100%;
+	text-align: center;
+	font-family: "SPL";
+	font-size: 33px;
+	margin-top: 10px;
+	color: #ED1C24;
+	font-weight: normal;
+
+}
+
+.icono img:hover {
+
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3)
+}
+
+.flecha {
+
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #000;
+	font-size: 0;
+	line-height: 0;
+	margin: 15px auto;
+
+}
+
+.ventana {
+
+	width: 100%;
+	margin-top: 20px;
+
+}
+
+
+.plakitos {
+
+	width: 420px;
+	height: 198px;
+	margin-top: 20px;
+	float: left;
+	margin-left: 20px;
+	font-family: "SPL";
+
+}
+
+.f1 {
+
+	background: url(../img/consejos-de-seguridad-de-llantas-y-aros.jpg) no-repeat;
+
+}
+
+.f2 {
+
+	background: #E6E7E8;
+	text-align: center;
+
+}
+
+.f3 {
+
+	background: #3a3a3a url(../img/visitas-y-descargarcas-de-surtillantas.jpg) no-repeat center center;
+
+}
+
+.f1 .texto_1 {
+
+	color: #fff;
+	font-size: 28px;
+	line-height: 28px;
+	width: 408px;
+	height: 54px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-left: 7px;
+	background: rgba(35, 31, 32, .5);
+	margin-top: 129px;
+
+}
+
+.f2 .texto_1 {
+
+	color: #000;
+	font-size: 40px;
+	line-height: 40px;
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+
+}
+
+.f2 .texto_2 {
+
+	color: #Ed1C24;
+	font-size: 51px;
+	line-height: 15px;
+	width: 100%;
+	text-align: center;
+
+}
+
+.f2HomeImg {
+	background-image: url("../img/promociones-descuentos-de-llantas-baratas-en-surtillantas.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.f2 img {
+
+
+	margin-top: 18px;
+
+}
+
+
+.f3 .texto_1 {
+
+	color: #fff;
+	font-size: 32px;
+	line-height: 40px;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	margin-top: 12px;
+
+}
+
+.f3 .texto_2 {
+
+	color: #fff;
+	font-size: 32px;
+	line-height: 40px;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	margin-top: 91px;
+
+}
+
+.page_1 h2 {
+
+	color: #fff;
+	font-size: 32px;
+	font-family: "SPL";
+	width: 100%;
+	text-align: center;
+
+}
+
+.page_1 h5 {
+
+	color: #fff;
+	font-size: 17px;
+	font-family: "SPL";
+	width: 100%;
+	text-align: center;
+	font-weight: normal;
+
+}
+
+.logos_marcas {
+
+	float: left;
+	width: 315px;
+	height: 90px;
+	margin-left: 88.75px;
+	margin-top: 40px;
+	top: 30px;
+	opacity: 0;
+
+}
+
+.page_2 p {
+
+	width: 530px;
+	font-family: "SPL";
+	color: #000;
+	margin-top: 65px;
+	margin-left: 55px;
+	float: left;
+
+}
+
+.page_2 .carro_linea {
+
+	margin-top: 140px;
+	float: right;
+
+}
+
+.page_2.bannerAmarillo {
+	margin: 20px 0px 40px 0px;
+}
+
+.page_2.bannerAmarillo img {
+	width: 100%;
+	height: auto;
+}
+
+.page_2 .ta_1 {
+
+	font-size: 96px;
+	line-height: 66px;
+
+
+}
+
+.page_2 .ta_2 {
+
+	font-size: 62px;
+	line-height: 42px;
+
+}
+
+.page_2 .ta_3 {
+
+	font-size: 69px;
+	line-height: 39px;
+
+}
+
+.page_2 .ta_4 {
+
+	font-size: 157px;
+	line-height: 100px;
+	position: relative;
+	left: -50px;
+	opacity: 0;
+
+}
+
+.page_2 .ta_5 {
+
+	font-size: 67px;
+	line-height: 47px;
+
+}
+
+.logo_dis {
+
+	float: left;
+	width: 250px;
+	height: 50px;
+	margin-top: 40px;
+	opacity: 0;
+	top: 400px;
+
+}
+
+.exp_cent {
+
+	float: none;
+	margin: 40px auto;
+
+}
+
+.page_3 p {
+
+	font-size: 40px;
+	font-family: "SPL";
+	color: #000;
+	width: 100%;
+	text-align: center;
+	line-height: 40px;
+
+}
+
+.aquiles {
+
+	display: none;
+
+}
+
+/* ==================================================
+	Inicio
+================================================== */
+
+/* ==================================================
+	Nosotros
+================================================== */
+.logo_com {
+
+	margin-top: 10px;
+	margin-left: 295px;
+
+}
+
+.triangulo {
+
+	width: 0;
+	height: 0;
+	border-left: 135px solid #fff;
+	border-top: 0px solid transparent;
+	border-bottom: 65px solid transparent;
+	position: absolute;
+	margin-left: 298px;
+
+}
+
+#ani_nos {
+
+	position: relative;
+	left: -1000px;
+	opacity: 0;
+
+}
+
+.n_page .texto_1 {
+
+	float: left;
+	width: 600px;
+	font-family: "SPL";
+
+}
+
+.n_page .texto_2 {
+
+	float: left;
+	width: 422px;
+	margin-left: 140px;
+	margin-top: 48px;
+	position: relative;
+	top: 30px;
+	opacity: 0;
+
+}
+
+.n_page .texto_2 p,
+.n_page .texto_2 h2,
+.n_page .texto_2 h3,
+.n_page .texto_2 h4 {
+
+	font-family: "LIN";
+	font-size: 17px;
+	line-height: 17px;
+	text-align: justify;
+	display: inline;
+
+}
+
+.n_page .ta_1 {
+
+	font-size: 65px;
+	line-height: 65px;
+
+}
+
+.n_page .ta_2 {
+
+	font-size: 88px;
+	line-height: 58px;
+
+}
+
+.n_page .ta_3 {
+
+	font-size: 54px;
+	line-height: 54px;
+
+}
+
+.n_page .ta_4 {
+
+	font-size: 99px;
+	line-height: 66px;
+
+}
+
+.n_page .ta_5 {
+
+	font-size: 99px;
+	line-height: 66px;
+
+}
+
+.n_page .ta_6 {
+
+	font-size: 57px;
+	line-height: 87px;
+
+}
+
+.n_page .ta_7 {
+
+	font-size: 57px;
+	line-height: 17px;
+
+}
+
+/* ==================================================
+	Nosotros
+================================================== */
+
+
+/* ==================================================
+	Productos
+================================================== */
+
+.titulo_pro {
+
+	color: #000;
+	height: 32px;
+	font-size: 65px;
+	font-family: "SPL";
+	margin-top: 80px;
+	margin-bottom: 0px;
+	margin-left: 90px;
+
+}
+
+.palpito {
+
+	position: relative;
+}
+
+#momo_selc,
+#momo_selc_bus {
+
+	text-decoration: underline;
+
+}
+
+.aros {
+
+	width: 100%;
+	height: 185px;
+	overflow: hidden;
+
+}
+
+.llantas1,
+.llantas1_bus {
+
+	width: 100%;
+	height: 185px;
+	overflow: hidden;
+
+}
+
+.accesorios {
+
+	width: 100%;
+	height: 185px;
+	overflow: hidden;
+
+}
+
+.fondo_aros {
+
+	width: 100%;
+	height: 80px;
+	padding-top: 105px;
+	background: url(../img/aros-de-venta-en-quito-ecuador.jpg);
+
+}
+
+.fondo_compra {
+
+	width: 100%;
+	height: 80px;
+	padding-top: 105px;
+	background: url(../img/banner-nitro.jpg);
+
+}
+
+.fondo_llantas {
+
+	width: 100%;
+	height: 80px;
+	padding-top: 105px;
+	background: url(../img/llantas-de-venta-en-quito-ecuador.jpg);
+
+}
+
+.fondo_llantas_bus {
+
+	width: 100%;
+	height: 80px;
+	padding-top: 105px;
+	background: url(../img/llantas-de-venta-en-quito-ecuador-bus.png);
+
+}
+
+.fondo_accesorios {
+
+	width: 100%;
+	height: 80px;
+	padding-top: 105px;
+	background: url(../img/accsesorios-correctores-tuercas-de-seguridad-pernos-valvulas-de-llantas-y-aros-en-quito-ecuador-servicios.jpg);
+
+}
+
+.t_aros {
+
+	color: #fff;
+	font-size: 43px;
+	font-family: "SPL";
+	border-bottom: 5px solid #fff;
+	margin-left: 55px;
+	width: 105px;
+
+}
+
+.t_llantas {
+
+	color: #fff;
+	font-size: 43px;
+	font-family: "SPL";
+	border-bottom: 5px solid #fff;
+	margin-left: 55px;
+	width: 170px;
+
+}
+
+.t_llantas_largo {
+
+	color: #fff;
+	font-size: 43px;
+	font-family: "SPL";
+	border-bottom: 5px solid #fff;
+	margin-left: 55px;
+	margin-right: auto;
+	width: 50%;
+
+}
+
+.t_accesorios {
+
+	color: #fff;
+	font-size: 43px;
+	font-family: "SPL";
+	border-bottom: 5px solid #fff;
+	margin-left: 55px;
+	width: 240px;
+
+}
+
+
+.clasi {
+
+	width: 100%;
+	position: relative;
+	z-index: 1;
+
+}
+
+.tipo_car {
+
+	width: 167px;
+	height: 0px;
+	border-right: 20px solid transparent;
+	border-top: 30px solid #000;
+	float: left;
+	margin-top: 15px;
+
+}
+
+.tipo_car1 {
+
+	width: 79px;
+	height: 0px;
+	border-left: 20px solid transparent;
+	border-bottom: 30px solid #000;
+	float: left;
+	margin-top: 15px;
+
+}
+
+.tipo_car p {
+
+	margin-top: -25px;
+	margin-left: 10px;
+	font-size: 27px;
+	font-family: "SPL";
+	font-weight: normal;
+	color: #fff;
+
+}
+
+.tipo_car1 p {
+
+	line-height: 30px;
+	margin-left: 10px;
+	font-size: 27px;
+	font-family: "SPL";
+	font-weight: normal;
+	color: #fff;
+
+}
+
+.subdi {
+
+	width: 170px;
+	height: 35px;
+	padding-top: 65px;
+	border-left: #000 solid 1px;
+	margin-top: 5px;
+	padding-left: 5px;
+	float: left;
+	margin-left: 15px;
+
+}
+
+.pdm {
+
+	height: auto;
+	padding-top: 20px;
+
+}
+
+#hero_selc,
+#hero_selc_bus {
+
+	text-decoration: underline;
+
+}
+
+.senalador {
+
+	float: left;
+	width: 24px;
+	border-top: solid #000 1px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	margin-right: 5px;
+
+}
+
+.opciones_mar {
+
+	font-size: 23px;
+	font-family: "SPL";
+	font-weight: normal;
+	width: 98px;
+	height: 25px;
+	line-height: 25px;
+	float: left;
+	margin-top: -11px;
+	cursor: pointer;
+	z-index: 400000;
+	position: relative;
+
+}
+
+.marcax {
+
+	width: 100%;
+	position: relative;
+	top: -30px;
+
+}
+
+.logo {
+
+	width: 400px;
+	float: left;
+	text-align: center;
+
+}
+
+.logo img {
+
+	margin-top: 180px;
+
+}
+
+.atras {
+
+	width: 35px;
+	height: 400px;
+	background: #EE2E24;
+	position: absolute;
+	z-index: 800000;
+	opacity: 0;
+	cursor: pointer;
+
+}
+
+.adelante {
+
+	width: 35px;
+	height: 400px;
+	background: #EE2E24;
+	position: absolute;
+	right: 0px;
+	z-index: 800000;
+	cursor: pointer;
+
+}
+
+#hero_delante,
+#hero_delante_bus {
+
+	display: none;
+
+}
+
+#hero_tras,
+#hero_tras_bus {
+
+	display: none;
+
+}
+
+#confor_delante,
+#confor_delante_bus {
+
+	display: none;
+
+}
+
+#confor_tras,
+#confor_tras_bus {
+
+	display: none;
+
+}
+
+#sunny_delante,
+#sunny_delante_bus {
+
+	display: none;
+
+}
+
+#sunny_tras,
+#sunny_tras_bus {
+
+	display: none;
+
+}
+
+#dunlop_delante,
+#dunlop_delante_bus {
+
+	display: none;
+
+}
+
+#dunlop_tras,
+#dunlop_tras_bus {
+
+	display: none;
+
+}
+
+.vista {
+
+	float: left;
+	width: 900px;
+	height: 400px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	overflow: hidden;
+
+
+}
+
+.estante {
+
+	width: 2910px;
+	height: 400px;
+	position: relative;
+
+}
+
+.estante1 {
+
+	width: 8106px;
+	height: 400px;
+	position: relative;
+
+}
+
+.estante2 {
+
+	width: 2910px;
+	height: 400px;
+	position: relative;
+
+}
+
+.estante3 {
+
+	width: 2910px;
+	height: 400px;
+	position: relative;
+
+}
+
+.estante4,
+.estante4_bus {
+
+	width: 2910px;
+	height: 400px;
+	position: relative;
+
+}
+
+.estante5,
+.estante5_bus {
+
+	width: 2910px;
+	height: 400px;
+	position: relative;
+
+}
+
+.estante6,
+.estante6_bus {
+
+	width: 2910px;
+	height: 400px;
+	position: relative;
+
+}
+
+.estante7,
+.estante7_bus {
+
+	width: 2910px;
+	height: 400px;
+	position: relative;
+
+}
+
+.estante8,
+.estante8_bus {
+
+	width: 2910px;
+	height: 400px;
+	position: relative;
+
+}
+
+.estante9,
+.estante9_bus {
+
+	width: 2910px;
+	height: 400px;
+	position: relative;
+
+}
+
+.estante10,
+.estante10_bus {
+
+	width: 2910px;
+	height: 400px;
+	position: relative;
+
+}
+
+.especies {
+
+	width: 170px;
+	height: 170px;
+	border: solid #939598 1px;
+	float: left;
+	margin-left: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+
+
+}
+
+.primeriso {
+
+	margin-left: 50px;
+
+}
+
+.nombre_es {
+
+	background: url(../img/bandera.png);
+	width: 141px;
+	height: 22px;
+	margin-top: -8px;
+	color: #fff;
+	line-height: 22px;
+	text-align: center;
+	font-family: "SPL";
+	margin-left: 30px;
+	position: relative;
+	text-transform: uppercase;
+
+}
+
+.fle_hor_tras {
+
+	width: 0;
+	height: 0;
+	border-right: 20px solid #fff;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	margin-left: 7.5px;
+	margin-top: 190px;
+
+}
+
+.fle_hor_delante {
+
+	width: 0;
+	height: 0;
+	border-left: 20px solid #fff;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	margin-left: 7.5px;
+	margin-top: 190px;
+
+}
+
+#fle_aros {
+
+	width: 100%;
+	height: 27.5px;
+	background: #000;
+	padding-top: 7.5px;
+	cursor: pointer;
+	margin-bottom: 20px;
+
+}
+
+#fle_llantas,
+#fle_llantas_bus {
+	width: 100%;
+	height: 27.5px;
+	background: #000;
+	padding-top: 7.5px;
+	cursor: pointer;
+	margin-bottom: 20px;
+
+}
+
+#fle_accesorios {
+
+	width: 100%;
+	height: 27.5px;
+	background: #000;
+	padding-top: 7.5px;
+	cursor: pointer;
+	margin-bottom: 20px;
+
+}
+
+.fle_ver_abajo {
+
+	width: 0;
+	height: 0;
+	border-top: 20px solid #fff;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	margin: 0px auto;
+
+}
+
+
+.fle_ver_arriba {
+
+	width: 0;
+	height: 0;
+	border-bottom: 20px solid #fff;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	display: none;
+	margin: 0px auto;
+	opacity: 0;
+
+
+}
+
+.nota {
+
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-family: "SPL";
+	font-size: 17px;
+	margin-top: 10px;
+
+}
+
+#hrs_a {
+
+	display: none;
+
+}
+
+#hrs_4 {
+
+	display: none;
+
+}
+
+#ballis {
+
+	display: none;
+
+}
+
+#confor {
+
+	display: none;
+
+}
+
+#atturo {
+
+	display: none;
+
+}
+
+#sunny {
+
+	display: none;
+
+}
+
+#dunlop {
+
+	display: none;
+
+}
+
+#toyo {
+
+	display: none;
+
+}
+
+#maxxis {
+
+	display: none;
+
+}
+
+.list_acc {
+
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 10px;
+
+}
+
+.acc {
+
+	width: 426.6px;
+	margin-left: 10px;
+	height: 56px;
+	float: left;
+	background: #D1D3D4;
+	text-align: center;
+	line-height: 56px;
+	color: #000;
+	font-family: "SPL";
+	margin-bottom: 10px;
+	font-size: 44px;
+
+}
+
+/* ==================================================
+	Productos
+================================================== */
+
+
+/* ==================================================
+	Servicios
+================================================== */
+
+.triangulo1 {
+
+	width: 0;
+	height: 0;
+	border-left: 135px solid #fff;
+	border-top: 0px solid transparent;
+	border-bottom: 65px solid transparent;
+	position: absolute;
+	margin-left: 498px;
+
+}
+
+
+.page_ser {
+
+	width: 100%;
+	background: #e6e7e8;
+	padding: 30px 0 250px 0;
+
+}
+
+
+.page_ser .titulo {
+
+	text-align: center;
+	font-family: "SPL";
+	color: #ec1c24;
+	font-size: 34px;
+
+}
+
+
+.page_ser .texto {
+
+	width: 35%;
+	padding: 50px 0;
+	margin: 0 auto;
+	text-align: center;
+	font-family: "LIN";
+	color: #000;
+	font-size: 13px;
+
+}
+
+.servicios {
+
+	margin-top: -280px;
+
+}
+
+.servicios img {
+
+	width: 100%;
+
+}
+
+
+.servicios .tipo {
+
+	width: 70%;
+	padding: 20px 10px;
+	background: #000;
+	color: #fdbf1a;
+	font-size: 18px;
+	font-family: "SPL";
+	text-align: center;
+	line-height: 18px;
+	margin: -50px auto -20px;
+	position: relative;
+	z-index: 2;
+
+}
+
+
+.servicios .textos {
+
+	width: 100%;
+	height: 100%;
+	padding: 30px 10px 10px 10px;
+	background: #ec1c24;
+	color: #fff;
+	font-size: 14px;
+	font-family: "LIN";
+	text-align: justify;
+	line-height: 16px;
+	margin-bottom: 20px;
+
+}
+
+.ipad_serv {
+
+	display: none;
+
+}
+
+/* ==================================================
+	Servicios
+================================================== */
+
+/* ==================================================
+	Contactos
+================================================== */
+
+.page_con {
+
+	width: 100%;
+	padding: 10px 0 30px;
+	background: #ec1c24;
+	margin-bottom: 20px;
+
+}
+
+.page_con .titulo {
+
+	text-align: center;
+	font-size: 34px;
+	font-family: "SPL";
+	color: #fff;
+
+}
+
+.page_con .slogan {
+
+	text-align: center;
+	font-size: 25px;
+	font-family: "SPL";
+	color: #fff;
+
+}
+
+
+.bloque {
+
+	padding: 15px 0;
+	border: 1px solid #fff;
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+
+}
+
+.sucur {
+
+	margin-top: 40px;
+
+}
+
+.sucur img {
+
+	width: 100%;
+
+}
+
+.sucur .info {
+
+	background: #fff;
+
+}
+
+.sucur .titulo {
+
+	text-align: center;
+	font-family: "SPL";
+	font-size: 21px;
+	color: #000;
+	background: #fff;
+
+}
+
+.sucur .direccion {
+
+	text-align: center;
+	font-family: "BEB";
+	font-size: 14px;
+	color: #000;
+	background: #fff;
+
+}
+
+.sucur .numeros {
+
+	text-align: center;
+	font-family: "BEB";
+	font-size: 14px;
+	color: #000;
+	background: #fff;
+
+}
+
+.v_ampliada {
+
+	border: 1px solid #000;
+	float: left;
+	width: 100%;
+	padding: 10px 0;
+	margin-bottom: 20px;
+
+}
+
+.sucu1 {
+
+	display: block;
+
+}
+
+.sucu2,
+.sucu3,
+.sucu4,
+.sucu5 {
+
+	display: none;
+
+}
+
+.i-sucu1 {
+
+	border: 3px solid #fff;
+
+}
+
+.v_ampliada div {
+
+	padding: 0 5px;
+
+}
+
+.numeros .what {
+
+	display: inline;
+	width: 10px;
+	height: 10px;
+
+}
+
+.numeros p {
+
+	display: inline;
+
+}
+
+.v_ampliada .titulo {
+
+	text-align: center;
+	font-family: "SPL";
+	font-size: 21px;
+	color: #000;
+	background: #fff;
+	padding-top: 23%;
+
+
+}
+
+.v_ampliada .direccion {
+
+	text-align: center;
+	font-family: "BEB";
+	font-size: 14px;
+	color: #000;
+	background: #fff;
+	margin-top: 10%;
+
+}
+
+.v_ampliada .numeros {
+
+	text-align: center;
+	font-family: "BEB";
+	font-size: 14px;
+	color: #000;
+	background: #fff;
+
+}
+
+.map {
+
+	width: 100%;
+
+}
+
+.v_ampliada img {
+
+	width: 100%;
+
+}
+
+form {
+
+	width: 100%;
+	background: #f5f5f5;
+	padding: 20px;
+	position: relative;
+	z-index: 2;
+
+}
+
+form .titulo {
+
+	width: 100%;
+	text-align: center;
+	font-size: 17px;
+	;
+	font-family: "SPL";
+	color: #000;
+
+}
+
+label {
+
+	width: 100%;
+	font-size: 14px;
+	;
+	font-family: "BEB";
+	color: #000;
+	margin-top: 15px;
+
+}
+
+#contacto input[type=text],
+#contacto input[type=email],
+#contacto input[type=tel] {
+
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+	border: 1px solid #000;
+	background: transparent;
+	font-size: 14px;
+	font-family: "LIN";
+
+}
+
+#contacto textarea {
+
+	width: 100%;
+	height: 150px;
+	padding: 10px;
+	border: 1px solid #000;
+	background: transparent;
+
+}
+
+#contacto input[type=submit] {
+
+	border: 0px;
+	width: 40%;
+	margin: 20px auto 0px auto;
+	background: #000;
+	color: #fff;
+	font-family: "BEB";
+	font-size: 14px;
+	padding: 10px;
+	display: block;
+
+
+}
+
+.bg-cot {
+
+	width: 100%;
+	position: relative;
+	margin-top: -450px;
+	z-index: 1;
+
+}
+
+#resultado_solicitud {
+
+	width: 100%;
+	font-size: 19px;
+	;
+	font-family: "LIN";
+	color: #000;
+
+}
+
+/* ==================================================
+	Contactos
+================================================== */
+
+/* ==================================================
+	Adicional
+================================================== */
+
+.espacio {
+
+	height: 110px;
+	width: 100%;
+
+}
+
+.a_page .ta_1 {
+
+	font-size: 63px;
+	line-height: 53px;
+	margin-left: 68px;
+
+}
+
+.a_page .ta_2 {
+
+	font-size: 47px;
+	line-height: 37px;
+	margin-left: 68px;
+
+}
+
+.a_page .ta_3 {
+
+	font-size: 47px;
+	line-height: 37px;
+	margin-left: 68px;
+
+}
+
+.a_page .ta_4 {
+
+	font-size: 77px;
+	line-height: 67px;
+	margin-left: 68px;
+
+}
+
+.a_page .ta_5 {
+
+	font-size: 47px;
+	line-height: 37px;
+	margin-left: 68px;
+
+}
+
+.a_page .texto_1 {
+
+	width: 800px;
+
+}
+
+.consejos {
+
+	width: 90%;
+	padding: 5%;
+	margin-top: -10px;
+
+}
+
+.texto_cons {
+
+	width: 575px;
+	float: left;
+	text-align: justify;
+
+}
+
+.imagen_cons {
+
+	width: 400px;
+	float: right;
+	margin-right: 115px;
+	margin-top: 60px;
+
+
+}
+
+.texto_cons .titulo h4,
+.texto_cons .titulo h6,
+.texto_cons .titulo h2 {
+
+	width: 100%;
+	border-bottom: 5px solid #000;
+	color: #000;
+	font-family: "SPL";
+	font-size: 50px;
+	line-height: 52px;
+
+}
+
+.texto_cons .descripcion {
+
+	width: 100%;
+	color: #000;
+	font-family: "LIN";
+	margin-top: 20px;
+	font-size: 17px;
+
+}
+
+
+/* ==================================================
+	Adicional
+================================================== */
+.sin {
+
+	margin-left: 0px;
+
+}
+
+.franco {
+
+	display: none;
+}
+
+.prod {
+
+	margin-left: 845px;
+
+}
+
+.atturo_clean {
+
+	display: none;
+
+}
